@@ -2,7 +2,7 @@ head.ready(function() {
 	//select
 
 	//popups
-	$('.js-add').on('click', function() {
+	$('.js-send').on('click', function() {
 		$('.js-add-pop').addClass('js-open');
 		$('.form__box').addClass('js-close');
 		return false;
@@ -17,7 +17,7 @@ head.ready(function() {
 		$('.form__box').addClass('js-close');
 		return false;
 	});
-	$('.js-send').on('click', function() {
+	$('.js-add').on('click', function() {
 		$('.js-send-pop').addClass('js-open');
 		$('.js-add-pop').removeClass('js-open');
 		$('.form__box').addClass('js-close');

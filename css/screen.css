@@ -110,7 +110,7 @@ h1, .heading { font-family: "ProximaNova Bold", Arial, sans-serif; font-size: 30
 .next-slide_mod { width: 18px; height: 11px; border: none; }
 .next-slide span { background: url('../img/icons-s5da75b8535.png') 0 -55px no-repeat; width: 18px; height: 11px; display: inline-block; vertical-align: middle; }
 
-.out { width: 100%; min-width: 320px; }
+.out { width: 100%; min-width: 320px; margin: 0 auto; }
 
 .header { background: url(../img/header.jpg) repeat-x; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; background-position: center top; padding: 55px 20px 35px 20px; position: relative; z-index: 1; }
 .header:before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url(../img/header-filter.png); z-index: -1; }
