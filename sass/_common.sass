@@ -47,25 +47,54 @@
 // p
 // 	+jpg(bla)
 
-
+html
+	font-size: 62.5%
 body
 	font-family: Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
 
 
-// common blocks      
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+a
+	text-decoration: none
+// fonts
++font("ALSRubl", ALSRubl)
++font("ProximaNova Bold", ProximaNova-Bold)
++font("ProximaNova Regular", ProximaNova-Regular)
++font("ProximaNova Regular Italic", ProximaNova-RegularIt)
++font("ProximaNova Light", ProximaNova-Light)
+
+
+=rubl
+	font-family: "ALSRubl", Arial, sans-serif
+=bold
+	font-family: "ProximaNova Bold", Arial, sans-serif
+=reg
+	font-family: "ProximaNova Regular", Arial, sans-serif
+=light
+	font-family: "ProximaNova Light", Arial, sans-serif
+=italic
+	font-family: "ProximaNova Regular Italic", Arial, sans-serif
 
 
 
 
 
+=ttu
+	text-transform: uppercase
 
 
 
-
-
-
+h1, .heading
+	+bold
+	+fs(30)
+	display: block
+	text-align: center
+	line-height: 1.2
+	color: #424a51 
+	+ttu
 
 
 
