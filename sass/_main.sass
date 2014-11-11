@@ -18,6 +18,12 @@
 		bottom: 0
 		background: url(../img/header-filter.png)
 		z-index: -1
+	&_news
+		background: url(../img/page-news.jpg) repeat-x
+		+cover 
+		padding-bottom: 18px
+		&:before
+			background: url(../img/news-overlay.png) 
 	&__top
 		+vertical
 		text-align: left
@@ -1184,7 +1190,67 @@
 			margin: 0 auto 10px
 			max-width: 220px 
 			+box
-			
+	
+
+.back
+	+vertical
+	margin-bottom: 30px
+	display: inline-block
+	+opacity(1)
+	+tr(opacity 0.5s)
+	&:hover
+		+opacity(0.8)
+	i
+		+s(arr-back)
+		display: inline-block
+		vertical-align: middle
+		margin-right: 15px
+	span
+		display: inline-block
+		vertical-align: middle
+		+fs(16.67)
+		line-height: 1.4
+		letter-spacing: 0.05em
+		color: #fff
+		+bold
+		+ttu
+		padding-top: 2px
+.page
+	h2
+		+bold
+		+fs(22)
+		line-height: 1.1
+		letter-spacing: 0.05em
+		color: #fff
+		+ttu 
+		max-width: 660px
+		margin-bottom: 15px
+	&__date
+		+reg
+		+fs(18.75)
+		line-height: 1.2
+		letter-spacing: 0.05em
+		color: #fff
+		margin-bottom: 25px
+		display: block
+.text
+	padding: 40px 45px 10px 50px
+	background: #fff
+	+r(600)
+		padding: 5%
+	p
+		+fs(22)
+		line-height: 1.1
+		letter-spacing: 0.05em
+		+reg
+		color: #2c2c2c
+		margin-bottom: 20px
+		a
+			color: #249cce
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+
 .rubl
 	+rubl
 
