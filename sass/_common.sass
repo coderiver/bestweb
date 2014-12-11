@@ -59,23 +59,25 @@ a
 	text-decoration: none
 // fonts
 +font("ALSRubl", ALSRubl)
-+font("ProximaNova Bold", ProximaNova-Bold)
-+font("ProximaNova Regular", ProximaNova-Regular)
-+font("ProximaNova Regular Italic", ProximaNova-RegularIt)
-+font("ProximaNova Light", ProximaNova-Light)
++font("RobotoSlab Bold", RobotoSlab-Bold)
++font("Roboto Italic", roboto-italic)
++font("RobotoSlab Regular", robotoslab-regular)
++font("Roboto Regular", roboto-regular)
++font("Roboto Bold", roboto-bold)
 
 
 =rubl
 	font-family: "ALSRubl", Arial, sans-serif
 =bold
-	font-family: "ProximaNova Bold", Arial, sans-serif
-=reg
-	font-family: "ProximaNova Regular", Arial, sans-serif
-=light
-	font-family: "ProximaNova Light", Arial, sans-serif
+	font-family: "RobotoSlab Bold", Arial, sans-serif 
 =italic
-	font-family: "ProximaNova Regular Italic", Arial, sans-serif
-
+	font-family: "Roboto Italic", Arial, sans-serif 
+=reg
+	font-family: "RobotoSlab Regular", Arial, sans-serif 
+=rreg
+	font-family: "Roboto Regular", Arial, sans-serif 
+=rbold
+	font-family: "Roboto Bold", Arial, sans-serif 
 
 
 
@@ -84,16 +86,24 @@ a
 	text-transform: uppercase
 
 
-
 h1, .heading
 	+bold
-	+fs(30)
+	+fs(29.17)
 	display: block
-	text-align: center
 	line-height: 1.2
 	color: #424a51 
 	+ttu
-
+	margin-bottom: 20px
+	padding-top: 5px
+	+r(480)
+		+fs(24)
+h2
+	+bold
+	+fs(20.83)
+	line-height: 1
+	color: #2d2d2a 
+	+r(480)
+		+fs(18)
 
 
 

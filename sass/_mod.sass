@@ -1,3 +1,145 @@
+.input
+	width: 100%
+	padding: 16px 30px
+	+box
+	+rreg
+	+fs(20.83)
+	letter-spacing: 0.025em 
+	color: #222222
+	background: #fff  
+	line-height: 1.3 
+	+placeholder
+		+italic
+
+.search
+	position: relative
+	border: 2px solid #fff
+	border-top: none
+	border-right: none
+	display: inline-block
+	vertical-align: top
+	margin-bottom: 14px
+	width: 100%
+	max-width: 330px
+	&:hover
+		input
+			+opacity(0.5)
+	&__keyword
+		color: #fff
+		+opacity(0.22)
+		width: 100%
+		padding: 6px 20px 9px 48px
+		+box 
+		+italic
+		+fs(20.83)
+		background: none
+		+transition(opacity .2s linear)
+		+placeholder
+			color: #fff
+			+opacity(1)
+		&:focus
+			+opacity(0.5) 	
+	&__btn
+		+s(search)
+		+opacity(0.65)	
+		position: absolute
+		top: 11px
+		left: 15px
+.search_dark
+	.search__keyword
+		color: #222222
+		+opacity(0.5)
+		+placeholder
+			color: #222222
+			+opacity(1) 
+		&:focus
+			+opacity(0.7)
+	&:hover
+		input
+			+opacity(0.7)
+.btn
+	border: 1px solid #fff
+	+bold
+	line-height: 1.13
+	+fs(20.83)
+	letter-spacing: 0.05em 
+	color: #2d2d2a 
+	height: 72px
+	display: inline-block
+	+ttu
+	+transition(background .2s linear)
+	position: relative
+	text-align: center
+	padding: 0 55px 
+	+box  
+	&:active
+		top: 1px
+	&-yellow
+		background: #fcff00 
+		&:hover
+			background: darken(#fcff00, 3%) 
+	&-orange
+		background: #ff5325
+		color: #fff  
+		&:hover
+			background: darken(#ff5325, 3%) 
+	&-blue
+		background: #3ab6bd
+		color: #fff 
+		&:hover
+			background: darken(#3ab6bd, 3%) 
+			
+
+
+//spinner
+.spinner-wrap
+	position: relative
+	display: inline-block
+.input__spinner
+	padding: 15px 40px 15px 30px
+	width: 148px
+	+box
+	+fs(20.83)
+	letter-spacing: 0.025em 
+	+rreg
+	height: 60px
+	+r(480)
+		width: 120px
+.ui-spinner-up, .ui-spinner-down
+	position: absolute
+	right: 0
+	width: 40px
+	height: 27px
+	+vertical
+	cursor: pointer
+	text-align: right
+	.ui-icon
+		+fs(0)
+		display: block
+	.ui-button-text
+		margin-right: 24px
+		+r(480)
+			margin-right: 15px
+	.ui-button-text
+		width: 11px
+		height: 6px
+		display: inline-block
+.ui-spinner-up
+	top: 0
+	.ui-button-text
+		vertical-align: bottom
+	.ui-icon
+		+arr(11, 6, #101010, t)
+.ui-spinner-down
+	bottom: 0
+	.ui-button-text
+		vertical-align: top
+	.ui-icon
+		+arr(11, 6, #101010, b)
+.ui-spinner
+	position: relative
+	display: inline-block
+	
 //select
 .select
 	position: relative
@@ -5,17 +147,32 @@
 	cursor: pointer
 	width: 100%
 	+user-select(none)
-	+reg
-	+fs(16)
+	text-align: left
+	background: #fff 
+	margin-bottom: 20px
 	i
-		+arr(8, 5, #fff, b)
+		+arr(11, 6, #101010, b)
 		position: absolute
-		top: 16px
-		right: 5px
+		top: 50%
+		right: 25px
+		margin-top: -3px
 .select__text
 	position: relative
-	display: inline-block
+	display: block
 	vertical-align: middle
+	padding: 15px 30px
+	+box
+	+italic
+	+fs(20.83)
+	letter-spacing: 0.025em 
+	color: #222222
+	background: #fff
+	height: 60px
+	+opacity(0.5)
+	+tr(opacity 0.3s)
+	&.is-active
+		+opacity(1)
+		+rreg
 .select__list
 	position: absolute
 	display: none
@@ -26,395 +183,14 @@
 	overflow: hidden
 	li
 		cursor: pointer
-
-.select-form
-	background: #fff
-	color: #222222
-	text-align: left 
-	.select__text
-		padding: 10px 24px 10px 20px
-	i
-		top: 20px
-		right: 11px
-		+arr(8, 4, #424a51, b)
-	.select__list
-		li
-			background: #fff
-			padding: 5px 24px 5px 25px 
-			position: relative 
-			&:hover
-				background: darken(#fff, 5%)
-				&:after, &:before
-					content: "" 
-					position: absolute
-					right: 0
-					left: 0
-					border-top: 1px solid #d7d7d7  
-				&:after
-					top: 0
-				&:before
-					bottom: 0
-//checkbox
-.checkbox 
-	display: inline-block
-	position: relative
-	cursor: pointer
-	-webkit-user-select: none
-	+vertical
-	display: block
-	text-align: left
-	input
-		+opacity(0)
-		-webkit-user-select: none
-		width: 20px
-		height: 20px
-		display: inline-block
-		vertical-align: middle
-		margin-right: 14px
-		+border-radius(50%)
-		&:checked
-			+ .checkbox__title
-				&:after
-					display: block
-	&_mod
-		input
-			+border-radius(0)
-			width: 30px
-			height: 30px
-.checkbox__title
-	+fs(16)
-	vertical-align: middle
-	color: #222222
-	+reg 
-	&:before
-		content: ""
-		position: absolute
-		left: 0
-		top: 0px
-		-webkit-user-select: none
-		width: 16px
-		height: 16px
-		border: 2px solid #F8236E
-		+border-radius(50%)
-	&:after
-		content: ""
-		display: none
-		position: absolute
-		width: 8px
-		height: 8px
-		top: 6px
-		left: 6px
-		+border-radius(50%)
-		z-index: 99
-		-webkit-user-select: none
-		background: #F8236E 
-	&_mod
-		&:after
-			+s(checkbox)
-			background-color: none
-			top: 10px
-			left: 5px 
-		&:before
-			width: 30px
-			height: 30px
-			+border-radius(0)
-			background: #fff 
-			border: none
-//btn
-.btn-green, .btn-red, .btn-blue
-	+fs(14)
-	+bold
-	color: #fff
-	letter-spacing: 1px
-	width: 100%
-	max-width: 310px
-	display: inline-block
-	padding: 16px 0 15px
-	text-align: center
-	+ttu
-	position: relative
-	+r(600)
-		width: 80%
-	&:active
-		top: 1px
-.btn-green
-	background-color: #0FB6BC
-	&:hover
-		background: lighten(#0FB6BC, 5%)
-	&:active
-		background: darken(#0FB6BC, 5%)
-.btn-red
-	background-color: #F8236E
-	&:hover
-		background: lighten(#F8236E, 5%)
-	&:active
-		background: darken(#F8236E, 5%)
-.btn-blue
-	background-color: #1192D4
-	&:hover
-		background: lighten(#1192D4, 5%)
-	&:active
-		background: darken(#1192D4, 5%)
-
-.btn-more
-	+vertical
-	border: 2px solid #dce2e5
-	color: #DCE2E5
-	display: block
-	margin: 0 auto
-	max-width: 296px
-	height: 46px 
-	position: relative
-	+tr(opacity 0.5s)
-	span
-		display: inline-block
-		vertical-align: middle
-		+fs(14)
-		color: #fff
-		+bold
-		+ttu
-		letter-spacing: 2px 
-	&:hover
-		opacity: 0.8
-	&:active
-		top: 1px
-//spinner
-.spinner-wrap
-	position: relative
-	display: inline-block
-.input__spinner
-	padding: 11px 20px 9px 14px
-	width: 62px
-	+box
-	+fs(16)
-	color: #424242
-	+reg
-	margin-bottom: 10px
-	border: 1px solid #5cb5e2
-.ui-spinner-up, .ui-spinner-down
-	position: absolute
-	right: 10px
-	width: 8px
-	height: 4px
-	.ui-icon
-		+fs(0)
-		display: block
-.ui-spinner-up
-	top: 14px
-	.ui-icon
-		+arr(8, 4, #424a51, t)
-.ui-spinner-down
-	top: 24px
-	.ui-icon
-		+arr(8, 4, #424a51, b)
-.ui-button-text
-	width: 8px
-	height: 4px
-	display: block
-
-
-
-
-//
-.next-slide
-	+vertical
-	width: 56px
-	height: 56px
-	border: 2px solid #24d0ef
-	+border-radius(50%)
-	margin: 0 auto
-	display: block
-	&_mod
-		width: 18px
-		height: 11px
-		border: none
-	span
-		+s(blue-arr)
-		display: inline-block
-		vertical-align: middle
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		padding: 10px 30px
+		+box
+		+italic
+		+fs(20.83)
+		letter-spacing: 0.025em 
+		color: #222222
+		background: #fff
+		border-top: 1px solid darken(#fff, 10%) 
+		+tr(background 0.3s)
+		&:hover
+			background: darken(#fff, 10%) 
