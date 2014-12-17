@@ -18,7 +18,7 @@
 		<!-- begin header  -->
 		<header class="header">
 			<a href="#" class="logo">
-				<img src="img/logo.png" alt="">
+				<img src="img/logo2.png" alt="">
 			</a>
 			<button class="nav_btn"><span></span></button>
 			<nav class="nav">
@@ -34,14 +34,23 @@
 		<section class="container">
 			<div class="main main_mod">
 				<span class="heading">ПОПОЛНИТЬ ТЕЛЕФОН</span>
-				<div class="main__inner">
-					<form action="">
+				<div class="main__inner main__inner_mod">
+					<form action="" class="main__form">
 						<div class="main__field">
-							<input type="tel" class="input input_phone" placeholder="+7 (___) _________">
-							<input type="text" class="input" placeholder="Сумма">
+							<span class="main__title">номер телефона</span>
+							<label class="input-wrap">
+								<input type="tel" class="input input_phone error" placeholder="+7 (___) _________">
+								<span class="input-error">Следует ввести номер телефона</span>
+							</label>
+							<span class="main__title">Сумма</span>
+							<label class="input-wrap">
+								<input type="text" class="input input_amount">
+								<span class="placeholder">руб.</span>
+							</label>
 						</div>
 						<input type="submit" class="btn btn-yellow" value="Оплатить">
 					</form>
+					<span class="main__commission">Комиссия составит 1,5% от суммы платежа</span>
 				</div>
 			</div>
 			<div class="payment">
@@ -110,7 +119,7 @@
 						</li>
 					</ul>
 				</div>
-				<button class="btn btn-orange">ВСЕ УСЛУГИ</button>
+				<a href="#" class="btn btn-orange">ВСЕ УСЛУГИ</a>
 			</div>
 		</section>
 		<!-- end container -->

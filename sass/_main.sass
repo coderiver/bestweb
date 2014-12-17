@@ -33,13 +33,16 @@ html, body
 .logo
 	margin-right: 20px
 	float: left
-	+fs(0)
+	width: 125px
+	height: 88px
+	border: 3px solid #fff
+	+vertical
 	img
 		display: inline-block
+		vertical-align: middle
 	+r(1024)
 		float: none
 		display: block
-		width: 131px
 		margin: 0 auto 20px
 	+r(768)
 		display: inline-block
@@ -165,11 +168,13 @@ html, body
 		background: rgba(16, 175, 181, 0.50) 
 		padding: 22px 24px 47px 20px 
 		text-align: right
+		&_mod
+			padding-bottom: 19px 
 		+r(480)
 			padding: 20px 20px 25px 20px 
 			+box
 			margin: 0 auto
-		.input
+		.input-wrap
 			margin-bottom: 20px
 	&__field
 		margin-bottom: 19px
@@ -191,6 +196,19 @@ html, body
 					+fs(20)
 					font-style: normal
 					margin-left: 3px 
+	&__title, &__commission
+		+fs(16.67)
+		color: #FFF 
+		+bold
+		+ttu
+		margin-bottom: 5px
+		display: block
+		text-align: left
+	&__commission
+		text-transform: none
+		margin-bottom: 0
+	&__form
+		padding-bottom: 25px
 	.heading
 		+r(480)
 			display: block
@@ -389,18 +407,19 @@ html, body
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#70ffffff,endColorstr=#70ffffff)
 	background: rgba(255, 255, 255, 0.7)
 	+clr 
+	+r(800)
+		margin: 0 -10px 
 .sidebar
 	float: left
 	width: 300px
 	margin: 0 27px 20px 0
 	+r(800)
 		width: 100%
-		text-align: center
+		text-align: left
 	li
 		padding: 0 0 0 25px 
 		+r(800)
-			padding: 10px 
-			display: inline-block
+			padding: 0
 	a
 		display: block
 		border-bottom: 1px solid #fff 
@@ -411,12 +430,13 @@ html, body
 		+r(800)
 			line-height: normal
 			padding: 10px
-			border: 1px solid #fff
-			text-align: center
+			border: none
+			border-bottom: 1px solid #fff
+			line-height: 1.4 
 		&.is-active
 			border-right: none
 			+r(800)
-				border: 1px solid #fff 
+				border-bottom: 1px solid #fff 
 			span
 				+bold
 		&:hover
@@ -431,8 +451,6 @@ html, body
 			display: inline-block
 			max-width: 200px
 			width: 100%
-			+r(800)
-				max-width: 100%
 .logos-wrapper
 	display: block
 	+fs(0)
@@ -662,7 +680,12 @@ html, body
 		margin-top: 25px
 		+r(420)
 			margin: 10px 0 10px
-			
+	&__phone
+		+fs(22.31)
+		+bold
+		color: #2d2d2a
+		display: block
+		padding: 10px 0 0 0  		
 //cards
 .cards
 	+fs(0.1)
@@ -1034,3 +1057,100 @@ html, body
 				
 .text_mod
 	max-width: 656px 
+	
+//popup
+.overlay, .popup-wrapper
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	min-width: 320px
+	z-index: 999 
+	display: block
+.overlay
+	background: #278e8f
+	+opacity(0.41)  
+.popup-wrapper
+	+vertical
+	padding: 10px 
+.popup
+	display: inline-block
+	vertical-align: middle
+	width: 100%
+	max-width: 804px
+	+box
+	padding: 45px 40px 50px
+	background: #fff 
+	+box-shadow(0 0 5px rgba(94, 94, 94, 0.65))
+	+r(480)
+		padding: 25px 20px 30px 
+	&__text, &__sec
+		+fs(20.83)
+		line-height: 29.17px
+		color: #2d2d2a
+		display: block
+	&__text
+		+bold
+		margin-bottom: 20px
+	&__sec
+		+reg
+		margin-bottom: 30px
+	&__numbers
+		+fs(89.25)
+		line-height: 70px
+		color: #2d2d2a
+		+thin
+		display: block
+		margin-bottom: 10px
+	.btn
+		width: 100%
+		max-width: 306px
+
+.pay-success
+	.topper
+		text-align: center
+		margin-bottom: 40px
+		.heading
+			margin: 0
+	&__block
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#72ffffff,endColorstr=#72ffffff)
+		background: rgba(255, 255, 255, 0.72)
+		max-width: 556px
+		margin: 0 auto 50px
+		padding: 19px 21px 35px 45px  
+		+box
+	.info
+		.info__right
+			float: right
+			+r(480)
+				float: none
+				text-align: center
+				margin-bottom: 20px
+		.info__left
+			padding: 25px 0 0 0 
+			+r(480)
+				float: none
+				text-align: center
+				max-width: 100%
+				margin-bottom: 20px 
+		.logos
+			margin: 0
+		.info__price
+			padding: 10px 0 0 
+		.info__bottom
+			+r(480)
+				text-align: center
+	&__bottom
+		text-align: center
+		h4
+			+fs(20.83)
+			line-height: 1.15
+			color: #fff
+			letter-spacing: 0.05em 
+			+bold 
+			+ttu
+			margin-bottom: 25px
+		.input-wrap
+			max-width: 400px
+			margin: 0 auto 23px
