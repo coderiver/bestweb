@@ -1166,3 +1166,179 @@ html, body
 		.input-wrap
 			max-width: 400px
 			margin: 0 auto 23px
+			
+.panfilat
+	background: url(../img/main_mini.jpg) no-repeat
+	+cover
+	background-position: top center 
+	min-height: 100%
+	min-width: 320px  
+	&__inner
+		max-width: 720px
+		margin: 0 auto
+		padding: 20px 20px 0 
+		+r(480)
+			padding: 20px 0 0 
+.p-logo
+	margin: 0 auto
+	display: block
+	width: 125px
+	height: 88px
+	border: 3px solid #fff
+	+vertical
+	img
+		display: inline-block
+		vertical-align: middle
+		
+.pan
+	width: 100%
+	padding: 15px 0 13px 0 
+	&__top
+		background: #fff
+		text-align: center
+		padding: 17px 20px 37px
+		+r(480)
+			padding: 17px 10px 27px 
+		p
+			+reg
+			font-size: 16px
+			margin-bottom: 6px
+			color: #464646 
+			strong
+				+bold
+		a
+			margin-bottom: 10px
+			display: inline-block
+	&__body
+		background: rgba(255, 255, 255, 0.7) 
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#70ffffff,endColorstr=#70ffffff)
+		padding: 30px 55px 20px  
+		+r(768)
+			padding: 30px 25px 20px 
+		+r(480)
+			padding: 20px 10px 10px 
+		h2
+			text-transform: uppercase
+			text-align: center
+			color: #464646 
+			margin-bottom: 25px
+	&__title
+		+bold
+		font-size: 16px
+		color: #464646
+		display: block
+		text-transform: uppercase
+		margin-bottom: 7px
+		text-align: left
+	&__row
+		font-size: 0
+	&__select
+		display: inline-block
+		width: 100%
+		max-width: 400px
+		margin-bottom: 20px
+		margin-right: 50px
+		+r(800)
+			margin-right: 20px
+		+r(480)
+			margin-right: 0
+		.select
+			&:after
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0
+				width: 55px
+				background: #2bb9e6
+				content: "" 
+				z-index: 10  
+			i
+				border: none
+				+s(arr-down)
+				z-index: 11 
+				top: 50%
+				margin-top: -2px
+	&__input
+		display: inline-block
+		width: 160px
+		margin-bottom: 20px
+	&__inputs
+		width: 210px
+		font-size: 0
+	&__in
+		margin-right: 20px
+		width: 85px
+		display: inline-block
+		vertical-align: top 
+		margin-bottom: 20px
+	&__amount
+		width: 190px
+		margin-bottom: 10px
+	&__footnote
+		font-size: 14px
+		+reg
+		color: #464646
+	&__center
+		padding: 40px 0 0 0
+		text-align: center
+		.btn, .p-btn
+			display: block
+			margin: 0 auto 19px
+		.p-btn
+			max-width: 282px
+	.text-small
+		+reg
+		font-size: 12px
+		color: #6d6a6a
+		display: block
+		margin-bottom: 13px
+	.ipsp
+		display: inline-block
+		+s(ipsp-logo)
+
+.p-footer
+	border-top: 2px solid #ffe400
+	background: #fff
+	min-width: 320px 
+.p-inner
+	max-width: 820px
+	margin: 0 auto
+	padding: 25px 20px 10px
+	+clr
+	+r(768)
+		text-align: center
+	h3
+		+bold
+		font-size: 16px
+		color: #3b3b3b
+		text-align: center
+		text-transform: uppercase 
+		margin-bottom: 15px
+	h4, p
+		font-size: 14px
+		line-height: 20px
+		color: #3b3b3b 
+	h4
+		+bold
+		text-transform: uppercase
+	p
+		+reg
+.p-left
+	float: left
+	max-width: 350px
+	width: 100%
+	+r(768)
+		float: none
+		max-width: 100%
+.p-right
+	float: right
+	max-width: 350px
+	+r(768)
+		float: none
+		max-width: 100%
+.p-box
+	margin-bottom: 18px
+	p
+		max-width: 240px
+		+r(768)
+			max-width: 100%

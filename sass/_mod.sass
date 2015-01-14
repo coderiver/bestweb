@@ -222,3 +222,108 @@
 		+tr(background 0.3s)
 		&:hover
 			background: darken(#fff, 10%) 
+//p-select
+.p-select
+	position: relative
+	+vertical
+	cursor: pointer
+	width: 100%
+	+user-select(none)
+	text-align: left
+	background: #fff 
+	&:after
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: 55px
+		background: #2bb9e6
+		content: "" 
+		z-index: 10  
+		+r(480)
+			width: 40px
+	i
+		position: absolute
+		+s(arr-down)
+		z-index: 11 
+		top: 50%
+		right: 25px
+		margin-top: -2px
+		+r(480)
+			right: 17px
+.p-select__text
+	position: relative
+	display: block
+	vertical-align: middle
+	padding: 16px 55px 16px 23px
+	+box
+	+rreg
+	font-size: 16px
+	letter-spacing: 0.025em 
+	color: #222222
+	background: #fff
+	+r(480)
+		font-size: 14px
+.p-select__list
+	position: absolute
+	display: none
+	top: 100%
+	left: 0
+	right: 0
+	z-index: 100
+	overflow: hidden
+	li
+		cursor: pointer
+		padding: 10px 23px
+		+box
+		+rreg
+		font-size: 16px
+		letter-spacing: 0.025em 
+		color: #222222
+		background: #fff
+		border-top: 1px solid darken(#fff, 10%) 
+		&:hover
+			background: darken(#fff, 10%) 
+		+r(480)
+			font-size: 14px
+
+//p-input
+.p-input
+	width: 100%
+	padding: 16px 23px
+	+box
+	+rreg
+	font-size: 16px
+	letter-spacing: 0.025em 
+	color: #222222
+	background: #fff 
+	+placeholder
+		+italic
+	+r(480)
+		font-size: 14px
+//p-btn
+.p-btn
+	border: 1px solid #fff
+	+bold
+	line-height: 1.13
+	font-size: 14px
+	color: #2d2d2a 
+	display: inline-block
+	+ttu
+	+transition(background .2s linear)
+	position: relative
+	text-align: center
+	padding: 12px 30px 12px
+	+box  
+	background: #fcff00 
+	&:after
+		position: absolute
+		top: 50%
+		right: 16px
+		margin-top: -4px
+		content: "" 
+		+s(p-arr)
+	&:active
+		top: 1px
+	&:hover
+		background: darken(#fcff00, 3%) 
