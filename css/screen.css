@@ -511,41 +511,41 @@ html, body { height: 100%; }
 .pay-success__bottom h4 { font-size: 20.83px; line-height: 1.15; color: white; letter-spacing: 0.05em; font-family: "RobotoSlab Bold", Arial, sans-serif; text-transform: uppercase; margin-bottom: 25px; }
 .pay-success__bottom .input-wrap { max-width: 400px; margin: 0 auto 23px; }
 
-.panfilat { background: url(../img/main_mini.jpg) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; background-position: top center; min-height: 100%; min-width: 320px; }
-.panfilat__inner { max-width: 720px; margin: 0 auto; padding: 20px 20px 0; }
-@media only screen and (max-width: 480px) { .panfilat__inner { padding: 20px 0 0; } }
+.landing { background: url(../img/main_mini.jpg) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; background-position: top center; min-height: 100%; min-width: 320px; }
+.landing__inner { max-width: 720px; margin: 0 auto; padding: 20px 20px 0; }
+@media only screen and (max-width: 480px) { .landing__inner { padding: 20px 0 0; } }
 
 .p-logo { margin: 0 auto; display: block; width: 125px; height: 88px; border: 3px solid white; text-align: center; font-size: 0; }
 .p-logo:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .p-logo img { display: inline-block; vertical-align: middle; }
 
-.pan { width: 100%; padding: 15px 0 13px 0; }
-.pan__top { background: white; text-align: center; padding: 17px 20px 37px; }
-@media only screen and (max-width: 480px) { .pan__top { padding: 17px 10px 27px; } }
-.pan__top p { font-family: "RobotoSlab Regular", Arial, sans-serif; font-size: 16px; margin-bottom: 6px; color: #464646; }
-.pan__top p strong { font-family: "RobotoSlab Bold", Arial, sans-serif; }
-.pan__top a { margin-bottom: 10px; display: inline-block; }
-.pan__body { background: rgba(255, 255, 255, 0.7); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#70ffffff,endColorstr=#70ffffff); padding: 30px 55px 20px; }
-@media only screen and (max-width: 768px) { .pan__body { padding: 30px 25px 20px; } }
-@media only screen and (max-width: 480px) { .pan__body { padding: 20px 10px 10px; } }
-.pan__body h2 { text-transform: uppercase; text-align: center; color: #464646; margin-bottom: 25px; }
-.pan__title { font-family: "RobotoSlab Bold", Arial, sans-serif; font-size: 16px; color: #464646; display: block; text-transform: uppercase; margin-bottom: 7px; text-align: left; }
-.pan__row { font-size: 0; }
-.pan__select { display: inline-block; width: 100%; max-width: 400px; margin-bottom: 20px; margin-right: 50px; }
-@media only screen and (max-width: 800px) { .pan__select { margin-right: 20px; } }
-@media only screen and (max-width: 480px) { .pan__select { margin-right: 0; } }
-.pan__select .select:after { position: absolute; top: 0; right: 0; bottom: 0; width: 55px; background: #2bb9e6; content: ""; z-index: 10; }
-.pan__select .select i { border: none; background: url('../img/icons-se64f4f7d8d.png') 0 0 no-repeat; width: 7px; height: 4px; z-index: 11; top: 50%; margin-top: -2px; }
-.pan__input { display: inline-block; width: 160px; margin-bottom: 20px; }
-.pan__inputs { width: 210px; font-size: 0; }
-.pan__in { margin-right: 20px; width: 85px; display: inline-block; vertical-align: top; margin-bottom: 20px; }
-.pan__amount { width: 190px; margin-bottom: 10px; }
-.pan__footnote { font-size: 14px; font-family: "RobotoSlab Regular", Arial, sans-serif; color: #464646; }
-.pan__center { padding: 40px 0 0 0; text-align: center; }
-.pan__center .btn, .pan__center .p-btn { display: block; margin: 0 auto 19px; }
-.pan__center .p-btn { max-width: 282px; }
-.pan .text-small { font-family: "RobotoSlab Regular", Arial, sans-serif; font-size: 12px; color: #6d6a6a; display: block; margin-bottom: 13px; }
-.pan .ipsp { display: inline-block; background: url('../img/icons-se64f4f7d8d.png') 0 -166px no-repeat; width: 66px; height: 27px; }
+.lan { width: 100%; padding: 15px 0 13px 0; }
+.lan__top { background: white; text-align: center; padding: 17px 20px 37px; }
+@media only screen and (max-width: 480px) { .lan__top { padding: 17px 10px 27px; } }
+.lan__top p { font-family: "RobotoSlab Regular", Arial, sans-serif; font-size: 16px; margin-bottom: 6px; color: #464646; }
+.lan__top p strong { font-family: "RobotoSlab Bold", Arial, sans-serif; }
+.lan__top a { margin-bottom: 10px; display: inline-block; }
+.lan__body { background: rgba(255, 255, 255, 0.7); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#70ffffff,endColorstr=#70ffffff); padding: 30px 55px 20px; }
+@media only screen and (max-width: 768px) { .lan__body { padding: 30px 25px 20px; } }
+@media only screen and (max-width: 480px) { .lan__body { padding: 20px 10px 10px; } }
+.lan__body h2 { text-transform: uppercase; text-align: center; color: #464646; margin-bottom: 25px; }
+.lan__title { font-family: "RobotoSlab Bold", Arial, sans-serif; font-size: 16px; color: #464646; display: block; text-transform: uppercase; margin-bottom: 7px; text-align: left; }
+.lan__row { font-size: 0; }
+.lan__select { display: inline-block; width: 100%; max-width: 400px; margin-bottom: 20px; margin-right: 50px; }
+@media only screen and (max-width: 800px) { .lan__select { margin-right: 20px; } }
+@media only screen and (max-width: 480px) { .lan__select { margin-right: 0; } }
+.lan__select .select:after { position: absolute; top: 0; right: 0; bottom: 0; width: 55px; background: #2bb9e6; content: ""; z-index: 10; }
+.lan__select .select i { border: none; background: url('../img/icons-se64f4f7d8d.png') 0 0 no-repeat; width: 7px; height: 4px; z-index: 11; top: 50%; margin-top: -2px; }
+.lan__input { display: inline-block; width: 160px; margin-bottom: 20px; }
+.lan__inputs { width: 210px; font-size: 0; }
+.lan__in { margin-right: 20px; width: 85px; display: inline-block; vertical-align: top; margin-bottom: 20px; }
+.lan__amount { width: 190px; margin-bottom: 10px; }
+.lan__footnote { font-size: 14px; font-family: "RobotoSlab Regular", Arial, sans-serif; color: #464646; }
+.lan__center { padding: 40px 0 0 0; text-align: center; }
+.lan__center .btn, .lan__center .p-btn { display: block; margin: 0 auto 19px; }
+.lan__center .p-btn { max-width: 282px; }
+.lan .text-small { font-family: "RobotoSlab Regular", Arial, sans-serif; font-size: 12px; color: #6d6a6a; display: block; margin-bottom: 13px; }
+.lan .ipsp { display: inline-block; background: url('../img/icons-se64f4f7d8d.png') 0 -166px no-repeat; width: 66px; height: 27px; }
 
 .p-footer { border-top: 2px solid #ffe400; background: white; min-width: 320px; }
 
