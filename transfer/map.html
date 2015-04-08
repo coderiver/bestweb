@@ -1,0 +1,308 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Счёт.ру</title>
+	<meta name="viewport" content="initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta property="og:title" content="">
+	<meta property="og:site_name" content="Счёт.ру">
+	<meta property="og:description" content="Оплата услуг картой без регистрации, переводы на карту, счет в банке или за границу.">
+	<meta property="og:image" content="http://schet.nebo15.me//img/logo_black.png">
+	<link rel="icon" href="../schet/img/logo_black_48x48.png" sizes="48x48" type="image/png">
+
+	<link href="../schet/css/suggestions-15.2.css" rel="stylesheet">
+<link href="../schet/css/screen.css" rel="stylesheet">
+
+
+	
+	<!--[if lt IE 9]>
+	<script src="/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+		<script>
+		
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+						m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-43266496-9', 'auto');
+			ga('require', 'ec');
+			ga('set', '&cu', 'RUB');
+			ga('send', 'pageview');
+
+			</script>
+
+
+	<!-- BEGIN  out-->
+<div class="out out_main bg_0">
+	<!-- begin inner  -->
+	<div class="inner">
+		<!-- begin header  -->
+		<header class="header">
+			<a href="../index.html" class="logo">
+				<img src="../schet/img/logo.png" alt="">
+			</a>
+			<button class="nav_btn"><span></span></button>
+			<nav class="nav">
+				<a href="../index.html" class="">
+					<span>Оплата <br/>услуг</span>
+				</a>
+				<a href="../transfer.html" class="is-active">
+					<span>Перевод <br/>за границу</span>
+				</a>
+				<a href="../to_card.html"
+				   class="">
+					<span>Перевод <br/>на карту</span>
+				</a>
+				<a href="../to_bank.html"
+				   class="">
+					<span>Перевод <br/>на счет</span>
+				</a>
+																</nav>
+		</header>
+		<!-- end header -->
+
+		<!-- begin container  -->
+		<section class="container">
+				<style>
+		.map-popup p { font-family: "ProximaNova Regular", Arial, sans-serif; font-size: 14px; color: #373737; line-height: 1.2; }
+
+		.gmap { width: 100%; height: 640px; }
+
+		.gmap-controls {
+			margin-top: 6px;
+			border: 1px solid transparent;
+			border-radius: 2px 0 0 2px;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			height: 64px;
+			outline: none;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+		}
+
+		.gmap-search-input {
+			background-color: #fff;
+			padding: 0 11px 0 13px;
+			width: 90%;
+			font-family: Roboto;
+			font-size: 2em;
+			font-weight: 300;
+			text-overflow: ellipsis;
+			/*display: none;*/
+		}
+
+		.gmap-search-input:focus {
+			border-color: #4d90fe;
+			margin-left: -1px;
+			padding-left: 14px;  /* Regular padding-left + 1. */
+		}
+	</style>
+<div class="all-services wrap">
+	<div class="topper topper_mod">
+		<span class="heading">Пункты выдачи переводов</span>
+	</div>
+	<div class="text">
+		<a href="../transfer.1.html" class="back">Назад</a>
+		<div class="map">
+			<input id="pac-input" class="gmap-search-input gmap-controls" type="text"
+			       placeholder="Введите название города или адрес" style="display:none">
+
+			<div id="map_canvas" class="gmap"></div>
+		</div>
+	</div>
+</div>
+
+		</section>
+		<!-- end container -->
+	</div>
+	<!-- end inner -->
+</div>
+<!-- END out-->
+
+	<!-- begin footer  -->
+	<footer class="footer">
+		<div class="inner">
+			<a href="map.html#" class="footer__logo">
+				<img src="../schet/img/footer-logo.png" alt="">
+			</a>
+			<span class="copyright">©2014 Все права защищены</span>
+			<a href="../legal.html" class="footer__link">Правовая информация</a>
+			<a href="http://schet.copiny.com/topics/new" class="footer__link">
+				Сообщить о проблеме
+			</a>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<!-- begin popup js-popup  -->
+	<div class="popup-container" id="ipsp_popup">
+		<div class="overlay"></div>
+		<div class="popup-wrapper js-popup">
+			<div class="popup">
+				<span class="popup__text">Вы перенаправляем вас на страницу оплаты</span>
+				<img src="../schet/img/icons/ipsp-logo.png"/>
+			</div>
+		</div>
+	</div>
+	<!-- end popup js-popup -->
+
+	<!-- error popup -->
+	<div class="popup-container error_popup">
+		<div class="overlay"></div>
+		<div class="popup-wrapper js-popup">
+			<div class="popup">
+				<h2 class="popup__text">Произошла ошибка</h2>
+				<span class="popup__text countdown-part"></span>
+				<div class="popup__seconds countdown-part">
+					<span id="countdown" class="popup__numbers"></span>
+					<span class="popup__sec"></span>
+					<span class="popup__sec">Попробуйте обновить страницу, зайти позже или обратиться в <a href="http://schet.copiny.com/topics/new">службу поддержки</a>.</span>
+				</div>
+				<a href="map.html#" onclick="$('.error_popup').hide(); return false;" class="btn btn-blue">Закрыть</a>
+			</div>
+		</div>
+	</div>
+	<!-- end error popup -->
+
+	<script src="../js/lib/head.js"></script>
+<script src="../js/lib/jquery.js"></script>
+<script src="../js/lib/jquery.inputmask.bundle.js"></script>
+<script src="../js/lib/jquery-ui-custom.min.js"></script>
+<script src="../js/lib/jquery.validate.js"></script>
+<script src="../js/lib/jquery.textchange.js"></script>
+<script src="../js/lib/jquery.xdomainrequest.min.js"></script>
+<script src="../js/lib/jquery.suggestions-15.2.min.js"></script>
+<script src="../js/common.js"></script>
+
+
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+	<script>
+		head.ready(function() {
+
+			var map, layer, searchInput, searchBox, markers = [], infowindow;
+
+			function init_local_geo() {
+				map = new google.maps.Map(document.getElementById('map_canvas'), {
+					zoom: 16,
+					panControl: false,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+					}
+				});
+
+				searchInput = document.getElementById('pac-input');
+				map.controls[google.maps.ControlPosition.TOP_LEFT].push(searchInput);
+				searchBox = new google.maps.places.SearchBox((searchInput));
+				infowindow = new google.maps.InfoWindow();
+
+				if (navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(function (position) {
+						var center = position.coords;
+						map.setCenter(new google.maps.LatLng(center.latitude, center.longitude));
+						loadVisiblePoints();
+					}, function () {
+						handleNoGeolocation(true);
+					});
+				} else {
+					handleNoGeolocation(false);
+				}
+
+				google.maps.event.addListener(searchBox, 'places_changed', function () {
+					var places = searchBox.getPlaces();
+					if (places.length == 0) {
+						return;
+					}
+					current_place = places[0];
+					console.log(current_place);
+					map.panTo(current_place.geometry.location);
+					map.setZoom(current_place.address_components.length * 2 + 3);
+				});
+
+				google.maps.event.addListener(map, 'tilesloaded', function () {
+					$(searchInput).css('display', 'block');
+					loadVisiblePoints();
+				});
+			}
+
+			function loadVisiblePoints() {
+				var bounds = map.getBounds();
+				var from = bounds.getSouthWest().lat() + ',' + bounds.getSouthWest().lng();
+				var to = bounds.getNorthEast().lat() + ',' + bounds.getNorthEast().lng();
+
+				$.get('/transfer/agent_points/' + from + '-' + to).success(function (response) {
+					var new_markers = [];
+
+					response = response.data;
+
+					for (var i = 0; i < response.length; i++) {
+						var point = response[i];
+						var marker = new google.maps.Marker({
+							position: new google.maps.LatLng(
+									point.latitude,
+									point.longitude
+							),
+							map: map
+						});
+						new_markers.push(marker);
+
+						google.maps.event.addListener(marker, 'click', (function (marker, point) {
+							return function () {
+								var $contentString = $(
+										'<div class="map-popup" style="width:400px">' +
+										'<h3>' + point.name + '</h3>' +
+										'<p>' + point.address + '</p>' +
+										'<p><a href="http://schet.nebo15.me/transfer/agent_points/'&#32;+&#32;point.id&#32;+&#32;'">Подробнее</a></p>' +
+										'</div>'
+								);
+								var win = new google.maps.InfoWindow();
+								win.setContent($contentString[0]);
+								win.open(map, marker);
+							}
+						})(marker, point));
+					}
+
+					for (var i = 0; i < markers.length; i++) {
+						markers[i].setMap(null);
+						markers[i] = null;
+					}
+					markers = new_markers;
+				});
+			}
+
+			function handleNoGeolocation(errorFlag) {
+				if (errorFlag) {
+					var content = 'Error: The Geolocation service failed.';
+				} else {
+					var content = 'Error: Your browser doesn\'t support geolocation.';
+				}
+				var options = {
+					map: map,
+					position: new google.maps.LatLng(60, 105),
+					content: content
+				};
+				var infowindow = new google.maps.InfoWindow(options);
+				map.setCenter(options.position);
+			}
+
+			google.maps.event.addDomListener(window, 'load', init_local_geo);
+		});
+
+	</script>
+
+	
+	<script>
+
+	</script>
+</body>
+</html>

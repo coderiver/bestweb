@@ -1,0 +1,382 @@
+.input, .suggestions-suggestion, .input__spinner
+	width: 100%
+	padding: 16px 30px 15px
+	border: 1px solid white
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+	+reg
+	font-size: 20.83px
+	letter-spacing: 0.025em
+	color: #222222
+	background: white
+	line-height: 1.3
+	+r(600)
+		padding: 16px 20px 15px 
+// select.input
+// 	height: 46px
+// 	text-indent: 14px
+
+.input
+	+placeholder
+		// +italic
+
+.input_amount
+	padding: 12.8px 56px 12.8px 24px
+
+.input.error
+	border-color: #ff6b6b
+	background: #ffdede
+
+.input-wrap
+	position: relative
+	display: block
+	margin-bottom: 27px
+	.placeholder
+		position: absolute
+		top: 50%
+		right: 25px
+		margin-top: -24px
+		+reg
+		font-size: 20px
+		letter-spacing: 0.025em
+		color: #222222
+		+opacity(0.5)
+		line-height: 48px
+		font-style: italic
+
+.input-note
+	font-size: 12px
+	color: #666
+	margin: -10px 0 10px 0
+	text-align: left
+
+.input-error
+	+reg
+	font-size: 13.3px
+	line-height: 1.2
+	position: absolute
+	top: 100%
+	right: -48px
+	padding: 6px 13.6px 6.4px
+	color: white
+	background: #ff6b6b
+	&:before
+		content: ""
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 0 0 6px 9px
+		border-color: transparent transparent #ff6b6b transparent
+		position: absolute
+		right: 76px
+		bottom: 100%
+	+r(1024)
+		right: -20px
+	+r(600)
+		right: -16px
+
+	+r(480)
+		font-size: 11.2px
+		
+.btn
+	border: 1px solid white
+	+bold
+	line-height: 24px
+	font-size: 20.83px
+	letter-spacing: 0.05em
+	color: #ffffff
+	display: inline-block
+	text-transform: uppercase
+	+transition(background 0.2s linear)
+	position: relative
+	text-align: center
+	padding: 24px 25px 22px
+	+box
+	width: 100%
+	max-width: 250px
+	&:active
+		top: 1px
+
+.btn-yellow
+	background: #fcff00
+	color: #222
+	&:hover
+		background: #edf000
+
+.btn-orange
+	background: #ff5325
+	color: white
+	&:hover
+		background: #ff4716
+
+.btn-blue
+	background: #25bfb2
+	color: white
+	&:hover
+		background: #36abb1
+
+.btn-yellow:disabled, .btn-orange:disabled, .btn-blue:disabled
+	background: #aaaaaa
+	color: white
+	cursor: default
+
+.spinner-wrap
+	position: relative
+	display: inline-block
+
+
+.ui-spinner-up, .ui-spinner-down
+	position: absolute
+	right: 0
+	width: 32px
+	height: 27px
+	text-align: center
+	font-size: 0
+	cursor: pointer
+	text-align: right
+
+.ui-spinner-up:before, .ui-spinner-down:before
+	content: ""
+	display: inline-block
+	vertical-align: middle
+	width: 0
+	height: 100%
+
+.ui-spinner-up .ui-icon, .ui-spinner-down .ui-icon
+	font-size: 0
+	display: block
+
+.ui-spinner-up .ui-button-text, .ui-spinner-down .ui-button-text
+	margin-right: 19.2px
+
+@media only screen and (max-width: 480px)
+	.ui-spinner-up .ui-button-text, .ui-spinner-down .ui-button-text
+		margin-right: 12px
+
+.ui-spinner-up .ui-button-text, .ui-spinner-down .ui-button-text
+	width: 9px
+	height: 5px
+	display: inline-block
+
+.ui-spinner-up
+	top: 0
+	.ui-button-text
+		vertical-align: bottom
+	.ui-icon
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 0 4.4px 5px 4.4px
+		border-color: transparent transparent #101010 transparent
+
+.ui-spinner-down
+	bottom: 0
+	.ui-button-text
+		vertical-align: top
+	.ui-icon
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 5px 4.4px 0 4.4px
+		border-color: #101010 transparent transparent transparent
+
+.ui-spinner
+	position: relative
+	display: inline-block
+
+.select
+	position: relative
+	font-size: 20.83px
+	color: #222222 
+	cursor: pointer
+	width: 100%
+	+reg
+	+user-select(none)
+	text-align: left
+	background: white
+	margin-bottom: 20px
+	i
+		+arr(10, 6, #222, b)
+		position: absolute
+		top: 50%
+		right: 20px
+		margin-top: -3px
+
+.select__text
+	position: relative
+	display: block
+	vertical-align: middle
+	padding: 16px 60px 15px 30px
+	+box
+	background: white
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50)
+	opacity: 0.5
+	+transition(opacity 0.3s)
+	line-height: 1.3	
+	+r(600)
+		padding: 16px 20px 15px
+	&.is-active
+		filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false)
+		opacity: 1
+
+.select__list
+	position: absolute
+	display: none
+	top: 100%
+	left: 0
+	right: 0
+	z-index: 100
+	overflow: hidden
+	li
+		cursor: pointer
+		padding: 11px 60px 10px 30px
+		+box
+		background: white
+		border-top: 1px solid #e6e6e6
+		+transition(background 0.3s)
+		&:hover
+			background: #e6e6e6
+		
+		+r(600)
+			padding: 16px 20px 15px
+
+.p-select
+	position: relative
+	font-size: 0
+	cursor: pointer
+	width: 100%
+	-moz-user-select: -moz-none
+	-ms-user-select: none
+	-webkit-user-select: none
+	user-select: none
+	text-align: left
+	background: white
+	&:before
+		content: ""
+		display: inline-block
+		vertical-align: middle
+		width: 0
+		height: 100%
+	&:after
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: 44px
+		background: #2bb9e6
+		content: ""
+		z-index: 10
+	i
+		position: absolute
+		background: url('../img/icons-se64f4f7d8d.png') 0 0 no-repeat
+		width: 6px
+		height: 3px
+		z-index: 11
+		top: 50%
+		right: 20px
+		margin-top: -2px
+
+@media only screen and (max-width: 480px)
+	.p-select:after
+		width: 32px
+
+@media only screen and (max-width: 480px)
+	.p-select i
+		right: 13.6px
+
+.p-select__text
+	position: relative
+	display: block
+	vertical-align: middle
+	padding: 12.8px 44px 12.8px 18px
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+	+rreg
+	font-size: 12.8px
+	letter-spacing: 0.025em
+	color: #222222
+	background: white
+
+@media only screen and (max-width: 480px)
+	.p-select__text
+		font-size: 11.2px
+
+.p-select__list
+	position: absolute
+	display: none
+	top: 100%
+	left: 0
+	right: 0
+	z-index: 100
+	overflow: hidden
+	li
+		cursor: pointer
+		padding: 8px 18px
+		-moz-box-sizing: border-box
+		-webkit-box-sizing: border-box
+		box-sizing: border-box
+		+rreg
+		font-size: 12.8px
+		letter-spacing: 0.025em
+		color: #222222
+		background: white
+		border-top: 1px solid #e6e6e6
+		&:hover
+			background: #e6e6e6
+
+@media only screen and (max-width: 480px)
+	.p-select__list li
+		font-size: 11.2px
+
+.p-input
+	width: 100%
+	padding: 12.8px 18px
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+	+rreg
+	font-size: 12.8px
+	letter-spacing: 0.025em
+	color: #222222
+	background: white
+	&:-ms-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder, &::placeholder
+		+italic
+
+@media only screen and (max-width: 480px)
+	.p-input
+		font-size: 11.2px
+
+.p-btn
+	border: 1px solid white
+	+bold
+	line-height: 1.13
+	font-size: 11.2px
+	color: #2d2d2a
+	display: inline-block
+	text-transform: uppercase
+	-moz-transition: background 0.2s linear
+	-o-transition: background 0.2s linear
+	-webkit-transition: background 0.2s linear
+	transition: background 0.2s linear
+	position: relative
+	text-align: center
+	padding: 9.6px 24px 9.6px
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+	background: #fcff00
+	&:after
+		position: absolute
+		top: 50%
+		right: 12.8px
+		margin-top: -3px
+		content: ""
+		background: url('../img/icons-se64f4f7d8d.png') 0 -203px no-repeat
+		width: 4px
+		height: 7.2px
+	&:active
+		top: 1px
+	&:hover
+		background: #edf000
