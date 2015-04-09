@@ -98,143 +98,203 @@
 		</div>
 		<div class="cards">
 			<div class="payment-left">
+
 				<div class="pay-service">
 					<form class="payment-form" method="post" action="http://schet.nebo15.me/to_bank">
-						<div class="form-group">
-							<span class="main__title">Номер телефона плательщика</span>
-							<label class="input-wrap ">
-								<input name="parameters[payer_phone]"
-								type="text"
-								class="input mb_phone"
-								placeholder="+79012345678"
-								value=""/><span class="input-error"></span>
-							</label>
-						</div>
-						<div class="form-group">
-							<span class="main__title">Ваши фамилия, имя и отчество</span>
-							<label class="input-wrap ">
-								<input name="parameters[payer_fio]"
-								type="text"
-								class="input mb_fio"
-								placeholder="Сидоров Иван Петрович"
-								value=""/><span class="input-error"></span>
-							</label>
-						</div>
-						<div class="form-group">
-							<span class="main__title">Ваш адрес регистрации</span>
-							<label class="input-wrap ">
-								<input name="parameters[payer_address]"
-								type="text"
-								class="input mb_address"
-								placeholder="Москва, ул. Неглинная, 12"
-								value=""/><span class="input-error"></span>
-							</label>
-						</div>
-						<div class="form-group">
-							<span class="main__title">Получатель</span>
-							<label class="input-wrap ">
-								<select class="input" name="rsvr_type"><option value="person" selected>Физическое лицо</option><option value="company" >Юридическое лицо</option></select><span class="input-error"></span>
-							</label>
-						</div>
-						<div class="form-group">
-							<span class="main__title">Номер счета получателя</span>
-							<label class="input-wrap ">
-								<input name="parameters[phoneNumber]"
-								type="number"
-								class="input mb_number"
-								placeholder="12345678901234567890"
-								value=""/><span class="placeholder"></span><span class="input-error"></span>
-							</label>
-						</div>
-						<div class="form-group">
-							<span class="main__title">Банковский идентификационный код (БИК)</span>
-							<label class="input-wrap ">
-								<input name="parameters[rsvr_bik]"
-								type="text"
-								class="input mb_string"
-								placeholder="123456789"
-								value=""/><span class="placeholder"></span><span class="input-error"></span>
-							</label>
-						</div>
-						<div class="person_params">
-							<div class="form-group">
-								<span class="main__title">Фамилия, имя и отчество получателя</span>
-								<label class="input-wrap ">
-									<input name="parameters[rsvr_fio]"
-									type="text"
-									class="input mb_fio"
-									placeholder="Сидоров Иван Петрович"
-									value=""/><span class="input-error"></span>
-								</label>
+
+						<div class="pay-service__field">
+																																						    	    <div class="form-group">
+    <span class="main__title">
+        Номер телефона плательщика
+    </span>
+    <label class="input-wrap ">			<input name="parameters[payer_phone]"
+                type="text"
+                class="input mb_phone"
+                placeholder="+79012345678"
+                value=""/><span class="input-error"></span>
+    </label>
+    </div>
+    
+	
+																																						    	    <div class="form-group">
+    <span class="main__title">
+        Ваши фамилия, имя и отчество
+    </span>
+    <label class="input-wrap ">			<input name="parameters[payer_fio]"
+                type="text"
+                class="input mb_fio"
+                placeholder="Сидоров Иван Петрович"
+                value=""/><span class="input-error"></span>
+    </label>
+    </div>
+    
+	
+																																						    	    <div class="form-group">
+    <span class="main__title">
+        Ваш адрес регистрации
+    </span>
+    <label class="input-wrap ">			<input name="parameters[payer_address]"
+                type="text"
+                class="input mb_address"
+                placeholder="Москва, ул. Неглинная, 12"
+                value=""/><span class="input-error"></span>
+    </label>
+    </div>
+    
+	
+
+														<div class="form-group">
+    <span class="main__title">
+        Получатель
+    </span>
+    <label class="input-wrap "><select class="input" name="rsvr_type"><option value="person" selected>Физическое лицо</option><option value="company" >Юридическое лицо</option></select><span class="input-error"></span>
+    </label>
+    </div>
+
+																																						    	    <div class="form-group">
+    <span class="main__title">
+        Номер счета получателя
+    </span>
+    <label class="input-wrap ">				<input name="parameters[phoneNumber]"
+                    type="number"
+					class="input mb_number"
+					placeholder="12345678901234567890"
+					value=""/>
+			    <span class="placeholder"></span><span class="input-error"></span>
+    </label>
+    </div>
+    
+	
+																																						    	    <div class="form-group">
+    <span class="main__title">
+        Банковский идентификационный код (БИК)
+    </span>
+    <label class="input-wrap ">			<input name="parameters[rsvr_bik]"
+                type="text"
+                class="input mb_string"
+                placeholder="123456789"
+                value=""/>
+            <span class="placeholder"></span><span class="input-error"></span>
+    </label>
+    </div>
+    
+	
+
+							<div class="person_params">
+																																							    	    <div class="form-group">
+    <span class="main__title">
+        Фамилия, имя и отчество получателя
+    </span>
+    <label class="input-wrap ">			<input name="parameters[rsvr_fio]"
+                type="text"
+                class="input mb_fio"
+                placeholder="Сидоров Иван Петрович"
+                value=""/><span class="input-error"></span>
+    </label>
+    </div>
+    
+	
+																																							    	    <div class="form-group">
+    <span class="main__title">
+        Назначение платежа
+    </span>
+    <label class="input-wrap ">			<input name="parameters[pay_purpose]"
+                type="text"
+                class="input mb_string"
+                placeholder="Укажите назначение платежа"
+                value="На текущие расходы"/>
+            <span class="placeholder"></span><span class="input-error"></span>
+    </label>
+    </div>
+    
+	
 							</div>
-							<div class="form-group">
-								<span class="main__title">Назначение платежа</span>
-								<label class="input-wrap ">
-									<input name="parameters[pay_purpose]"
-									type="text"
-									class="input mb_string"
-									placeholder="Укажите назначение платежа"
-									value="На текущие расходы"/><span class="placeholder"></span><span class="input-error"></span>
-								</label>
+
+							<div class="company_params hidden">
+																																																    	    <div class="form-group">
+    <span class="main__title">
+        Название компании получателя
+    </span>
+    <label class="input-wrap ">			<input name="parameters[rsvr_fio]"
+                type="text"
+                class="input mb_string"
+                placeholder="ООО ТПР"
+                value=""/>
+            <span class="placeholder"></span><span class="input-error"></span>
+    </label>
+    </div>
+    
+	
+																																																    	    <div class="form-group">
+    <span class="main__title">
+        ИНН компании получателя (10 или 12 цифр)
+    </span>
+    <label class="input-wrap ">				<input name="parameters[rsvr_inn]"
+                    type="number"
+					class="input mb_number"
+					placeholder="1234567890"
+					value=""/>
+			    <span class="placeholder"></span><span class="input-error"></span>
+    </label>
+    </div>
+    
+	
+																																																    	    <div class="form-group">
+    <span class="main__title">
+        КПП получателя
+    </span>
+    <label class="input-wrap ">				<input name="parameters[rsvr_kpp]"
+                    type="number"
+					class="input mb_number"
+					placeholder="123456789"
+					value=""/>
+			    <span class="placeholder"></span><span class="input-error"></span>
+    </label>
+    </div>
+    
+	
+																																																    	    <div class="form-group">
+    <span class="main__title">
+        Назначение платежа
+    </span>
+    <label class="input-wrap ">			<input name="parameters[pay_purpose]"
+                type="text"
+                class="input mb_string"
+                placeholder="Укажите назначение вашего платежа, длинной от 10 до 120 символов"
+                value=""/>
+            <span class="placeholder"></span><span class="input-error"></span>
+    </label>
+    </div>
+    
+	
+																																																    	    <div class="form-group">
+    <span class="main__title">
+        НДС
+    </span>
+    <label class="input-wrap "><select class="input" name="parameters[nds]"><option value="1" selected>в том числе НДС</option><option value="0" >НДС не облагается</option></select><span class="input-error"></span>
+    </label>
+    </div>
+    
+	
 							</div>
+
+							    <div class="form-group">
+    <span class="main__title">
+        Сумма
+    </span>
+    <label class="input-wrap ">				<input name="amount"
+                    type="text"
+					class="input mb_amount"
+					placeholder="1 000"
+					value=""/>
+			    <span class="placeholder">руб.</span><span class="input-error"></span>
+    </label>
+    </div>
+
+
+							<p class="form-error"></p>
 						</div>
-						<div class="company_params hidden">
-							<span class="main__title">Название компании получателя</span>
-							<label class="input-wrap ">
-								<input name="parameters[rsvr_fio]"
-								type="text"
-								class="input mb_string"
-								placeholder="ООО ТПР"
-								value=""/><span class="placeholder"></span><span class="input-error"></span>
-							</label>
-						</div>
-						<div class="form-group">
-							<span class="main__title">ИНН компании получателя (10 или 12 цифр)</span>
-							<label class="input-wrap ">
-								<input name="parameters[rsvr_inn]"
-									type="number"
-									class="input mb_number"
-									placeholder="1234567890"
-									value=""/><span class="placeholder"></span><span class="input-error"></span>
-							</label>
-						</div>
-						<div class="form-group">
-							<span class="main__title">КПП получателя</span>
-							<label class="input-wrap ">
-								<input name="parameters[rsvr_kpp]"
-								type="number"
-								class="input mb_number"
-								placeholder="123456789"
-								value=""/><span class="placeholder"></span><span class="input-error"></span>
-							</label>
-						</div>
-						<div class="form-group">
-							<span class="main__title">Назначение платежа</span>
-							<label class="input-wrap ">
-								<input name="parameters[pay_purpose]"
-									type="text"
-									class="input mb_string"
-									placeholder="Укажите назначение вашего платежа, длинной от 10 до 120 символов"
-									value=""/><span class="placeholder"></span><span class="input-error"></span>
-							</label>
-						</div>
-						<div class="form-group">
-							<span class="main__title">НДС</span>
-							<label class="input-wrap ">
-								<select class="input" name="parameters[nds]"><option value="1" selected>в том числе НДС</option><option value="0" >НДС не облагается</option></select><span class="input-error"></span>
-							</label>
-						</div>
-						<div class="form-group">
-    						<span class="main__title">Сумма</span>
-							<label class="input-wrap ">
-								<input name="amount"
-								type="text"
-								class="input mb_amount"
-								placeholder="1 000"
-								value=""/><span class="placeholder">руб.</span><span class="input-error"></span>
-							</label>
-						</div>
-						<p class="form-error"></p>
+
 						<div class="pay-service__btns">
 							<input type="submit" class="btn btn-yellow" value="Оплатить">
 						</div>

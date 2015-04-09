@@ -46,1282 +46,169 @@
 // 	+png(blabla)
 // p
 // 	+jpg(bla)
+
 body
-	font-family: Arial, sans-serif
-	font-size: 10px
+	font-family: Arial, sans-serif 
+	font-size: 12px 
 	line-height: 1.4
+
 
 h1, h2, h3, h4, h5, h6
 	font-weight: normal
-
 a
 	text-decoration: none
-
+	color: #1e99c2
 // fonts
 +font("ALSRubl", ALSRubl)
-+font("Raleway-Regular", Raleway-Regular)
-+font("Raleway-Bold", Raleway-Bold)
-+font("Raleway-ExtraBold", Raleway-ExtraBold)
-+font("Raleway-Thin", Raleway-Thin)
-+font("Raleway-SemiBold", Raleway-SemiBold)
-+font("Raleway-Medium", Raleway-Medium)
-+font("Raleway-Light", Raleway-Light)
-+font("Raleway-Italic", Raleway-Italic)
++font("RobotoSlab Bold", RobotoSlab-Bold)
++font("Roboto Italic", roboto-italic)
++font("RobotoSlab Regular", robotoslab-regular)
++font("Roboto Regular", roboto-regular)
++font("Roboto Bold", roboto-bold)
++font("RobotoSlab Thin", robotoslab-thin)
+
 
 =rubl
 	font-family: "ALSRubl", Arial, sans-serif
+=bold
+	font-family: "RobotoSlab Bold", Arial, sans-serif 
 =italic
 	font-family: "Roboto Italic", Arial, sans-serif 
-=rreg
-	font-family: "Roboto Regular", Arial, sans-serif
-=rbold
-	font-family: "Raleway-Bold", Arial, sans-serif
-	
-
-=thin
-	font-family: "Raleway-Thin", Arial, sans-serif 
-=light
-	font-family: "Raleway-Light", Arial, sans-serif 
 =reg
-	font-family: "Raleway-Regular", Arial, sans-serif 
-=med
-	font-family: "Raleway-Medium", Arial, sans-serif 
-=semi
-	font-family: "Raleway-ExtraBold", Arial, sans-serif 
-=bold
-	font-family: "Raleway-Bold", Arial, sans-serif
-=exbold
-	font-family: "Raleway-ExtraBold", Arial, sans-serif
-=ritalic
-	font-family: "Raleway-Italic", Arial, sans-serif
+	font-family: "RobotoSlab Regular", Arial, sans-serif 
+=rreg
+	font-family: "Roboto Regular", Arial, sans-serif 
+=rbold
+	font-family: "Roboto Bold", Arial, sans-serif 
+=thin
+	font-family: "RobotoSlab Thin", Arial, sans-serif 
+
+
+
+
+=ttu
+	text-transform: uppercase
 
 
 h1, .heading
 	+bold
-	font-size: 29.17px*0.85
+	+fs(29.17)
 	display: block
 	line-height: 1.2
-	color: #fff
-	text-transform: uppercase
-	text-align: left
+	color: #2d2d2a 
+	+ttu
+	margin-bottom: 20px
+	padding-top: 5px
 	+r(480)
-		font-size: 24px*0.85
-
-h2, h3
-	+bold
-	font-size: 20.83px*0.85
-	line-height: 1
-	color: #fff
-	+r(480)
-		font-size: 15px*0.85
-
+		+fs(20)
 h2
-	text-transform: uppercase
+	+bold
+	+fs(20.83)
+	line-height: 1
+	color: #2d2d2a 
+	+r(480)
+		+fs(15)
 
-a
-	color: #1e99c2
+h3
+	font-family: "RobotoSlab Bold", Arial, sans-serif
+	font-size: 18px
+	line-height: 1
+	color: #2d2d2a
 
 small
-	font-size: 70%*0.85
-	color: #fff
-
-
-
-.search
-	position: relative
-	border: 2px solid white
-	border-top: none
-	border-right: none
-	display: inline-block
-	vertical-align: top
-	margin-bottom: 17px*0.85
-	width: 100%
-	max-width: 330px*0.85
-
-.search__keyword
-	width: 100%
-	padding: 9px*0.85 16px*0.85 11px*0.85 50px*0.85
-	+box
-	font-size: 20.83px*0.85
-	background: none
-	+transition(opacity 0.2s linear)
-	+reg
-	color: #fff
-	+placeholder
-		color: #fff
-		+opacity(0.5) 
-		+ritalic
-		font-style: italic
-.search__btn
-	+s(search-btn)
-	position: absolute
-	top: 10px
-	left: 15px
-
-
-
-
-
-html, body
-	height: 100%
-
-.out
-	width: 100%
-	min-width: 320px
-	height: auto
-	min-height: 100%
-	margin-bottom: 0
-	+box
-	padding: 0 8px 0
-	background-size: cover
-	background-position: 50% 50%
-	background-repeat: no-repeat
-	background-attachment: fixed
-	margin: 0 auto -57px
-	+r(1024)
-		margin: 0 
-	&:after
-		display: table
-		content: "" 
-		height: 57px
-		clear: both
-		+r(1024)
-			height: 0
-.out_main
-	background-image: url(../img/bg_0.jpg)
-
-.out_all-services
-	background-image: url(../img/bg_1.jpg)
-
-.bg_0
-	background-image: url("../img/bg-main.jpg")
-
-.bg_1
-	background-image: url("../img/bg_1.jpg")
-
-.bg_2
-	background-image: url("../img/bg_2.jpg")
-
-.bg_3
-	background-image: url("../img/bg_3.jpg")
-
-.bg_4
-	background-image: url("../img/bg_4.jpg")
-
-.bg_5
-	background-image: url("../img/bg_5.jpg")
-
-.inner
-	width: 100%
-	max-width: 1170px*0.85
-	margin: 0 auto
-
-.container
-	padding: 80px*0.85 0 80px*0.85 0
-	*zoom: 1
-	font-size: 0
-	clear: both
-	+clr
-	+r(769)
-		padding: 32px 0 32px
-
-
-.payment
-	width: 58.5%
-	display: inline-block
-	vertical-align: top
-	padding: 0 0 0 40px
-	+box
-	text-align: right
-	+r(1024)
-		padding: 0 0 0 20px
-	+r(980)
-		width: 100%
-		display: block
-		padding: 0
-		margin: 0 auto
-	+r(600)
-		text-align: left
-	+r(400)
-		text-align: center
-
-.topper
-	font-size: 0
-	text-align: justify
-	&:after
-		content: ""
-		width: 100%
-		display: inline-block
-	.heading, h1
-		display: inline-block
-		vertical-align: top
-		margin: 5px*0.85 15px*0.85 24px*0.85 0
-		+r(480)
-			display: block
-			text-align: center
-
-.topper_mod
-	border-bottom: rgba(255, 255, 255, 0.44) 1px solid
-
-.topper_step
-	max-width: 620px
-	+r(1024)
-		margin: 0 auto
-
-.service
-	margin-bottom: 29px
-	ul
-		*zoom: 1
-		overflow: hidden
-		+clr
-	li
-		width: 33.3%
-		height: 170px
-		float: left
-		position: relative
-		+r(1024)
-			width: 50%		
-		+r(980)
-			width: 33.3%
-		+r(600)
-			width: 50%
-		+r(400)
-			width: 100%
-		&.is-circle:before
-			content: ""
-			position: absolute
-			bottom: -4px
-			right: -4px
-			width: 8px
-			height: 8px
-			+border-radius(50%)
-			background: white
-			z-index: 1
-			+r(1024)
-				display: none
-	a
-		display: block
-		width: 100%
-		height: 100%
-		padding: 17px 0 0 0
-		+box
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#70ffffff, endColorstr=#70ffffff)
-		background: rgba(255, 255, 255, 0.7)
-		text-align: center
-		&:before, &:after
-			content: ""
-			position: absolute
-			background: white
-		&:before
-			top: 17px
-			left: -1px
-			bottom: 18px
-			width: 1px
-		&:after
-			right: 18px
-			top: -1px
-			left: 18px
-			height: 1px
-		&:hover span
-			text-decoration: underline
-		i
-			display: inline-block
-			vertical-align: middle
-			&.i-mobile
-				+s(phone)
-			&.i-satellite
-				+s(satellite)
-			&.i-old-phone
-				+s(call)
-			&.i-piggy
-				+s(piggy)
-			&.i-shield
-				+s(shield)
-			&.i-rocket
-				+s(rocket)
-			&.i-card
-				+s(card)
-			&.i-wifi
-				+s(signal)
-			&.i-switch
-				+s(switch)
-		span
-			display: inline-block
-			vertical-align: middle
-			width: 100%
-			font-size: 16.67px*0.85
-			line-height: 1
-			+bold
-			color: #222222
-			max-width: 112px
-			+r(400)
-				max-width: 90%
-		div
-			text-align: center
-			font-size: 0
-			height: 85px
-			+vertical
-
-.footer
-	width: 100%
-	min-width: 320px
-	+box
-	padding: 0 8px 0
-	background: white
-	height: 57px
-	border-top: 2px solid #ffe400	
-	+r(768)
-		height: auto
-		padding: 8px
-	.inner
-		font-size: 0
-		height: 100%
-		+vertical
-		text-align: left
-	span, a
-		display: inline-block
-		vertical-align: middle
-		padding-left: 20px
-
-.footer__logo
-	margin-right: 10px
-	+r(768)
-		margin-bottom: 8px
-
-.footer .copyright
-	margin-right: 16px
-
-.copyright, .footer__link
-	font-size: 12.5px
-	+bold
-	line-height: 16.67px
-	+r(768)
-		margin-bottom: 8px
-
-.copyright
-	color: #b3b3b3
-
-.footer__link
-	color: #09aee4
-	+transition(color 0.2s linear)
-	+opacity(0.74)
-	&:hover
-		text-decoration: underline
-
-
-.pay-service
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#70ffffff, endColorstr=#70ffffff)
-	background: rgba(255, 255, 255, 0.7)
-	max-width: 660px*0.85
-	padding: 32px*0.85 30px*0.85 13px*0.85
-	+box
-	+r(480)
-		padding: 9px 16px 9px
-		margin: 0 auto
-	.btn
-		max-width: 100%
-.pay-service__field
-	position: relative
-	padding: 0 200px*0.85 20px*0.85 0
-	// margin-bottom: 20px
-	+r(640)
-		padding: 0 0 20px*0.85
-		text-align: center
-	.input-wrap
-		margin-bottom: 20px
-.pay-service
-	.logos
-		position: absolute
-		top: 0
-		right: 0
-		+r(640)
-			position: static
-
-.pay-service__btns
-	font-size: 0.1px
-	text-align: justify
-	+r(640)
-		text-align: center
-	&:after
-		content: ""
-		width: 100%
-		display: inline-block
-	.btn
-		display: inline-block
-		margin: 0 0 16px 
-	.btn-orange
-		width: 51% 
-		+r(640)
-			width: 100%
-			max-width: 300px
-	.btn-blue
-		width: 41%
-		+r(640)
-			width: 100%
-			max-width: 300px 
-
-@media only screen and (max-width: 1024px)
-	.wrap .topper .heading
-		display: block
-		text-align: center
-		margin: 0 0 16px 0
-
-@media only screen and (max-width: 480px)
-	.wrap .topper .heading
-		display: block
-		text-align: center
-
-.payment-wrapper
-	*zoom: 1
-	&:after
-		content: " "
-		display: table
-		clear: both
-
-.payment-left
-	float: left
-	max-width: 555px*0.85
-	+r(1024)
-		float: none
-		margin: 0 auto 16px
-	.just
-		margin: 0 -6px
-		.btn
-			margin: 0 6px 16px 6px
-		.btn-orange
-			max-width: 180px
-
-.card
-	width: 100%
-	max-width: 555px*0.85
-	padding: 42px*0.85 30px*0.85 43px*0.85
-	background: rgba(37, 191, 178, 0.5)
-	border: 1px solid rgba(13, 147, 201, 0.92)
-	+border-radius(8px)
-	+box
-	margin-bottom: 51.2px*0.85
-	min-height: 260px
-	+r(420)
-		padding: 16px 12px 
-	.spinner-wrapper
-		display: inline-block
-		vertical-align: top
-		width: 50%
-		+box
-		padding: 0 7px 14px
-
-.card__title
-	display: block
-	font-size: 18.7px*0.85
-	line-height: 22.71px*0.85
-	+bold
-	color: white
-	font-weight: normal
-	margin-bottom: 9px*0.85
-
-.card__field
-	margin-bottom: 18px*0.85
-.card__field_small
-	// width: 103px
-	width: 23%
-	display: inline-block
-	vertical-align: top
-	+box
-	+r(550)
-		width: 50%
-		padding: 0 7px 0 0 
-.card__field_middle
-	// max-width: 324px
-	width: 66%
-	display: inline-block
-	vertical-align: top
-	font-size: 0
-	margin: 0 -7px 
-	+r(550)
-		display: block
-		width: auto
-		// max-width: 500px
-		width: 100%
-	.card__title
-		padding: 0 7px 
-	.circles
-		padding: 4px 10px 16px
-
-.card__bottom
-	font-size: 0.1px
-	text-align: justify
-	&:after
-		width: 100%
-		content: ""
-		display: inline-block
-
-.card__visa
-	float: right
-	+s(visa-card)
-
-.card_blue
-	background: rgba(0, 186, 255, 0.5)
-	.card__bottom .card__title
-		+opacity(0.5)
-		color: #323232 
-		text-shadow: 0px 1px 0px rgba(255, 255, 255, 1)
-	.card__field_middle
-		margin-right: 11.2px
-	.card__field_small
-		width: auto
-		.circles
-			padding: 4px 0 0 6px
-
-.circles
-	font-size: 0
-	padding: 4px 0 16px 0
-
-.circles__wrap
-	display: inline-block
-	margin: 0 6px 0 0
-
-.circles i
-	display: inline-block
-	width: 6px
-	height: 6px
-	+border-radius(50%)
-	background: #323232
-	margin: 0 4px 0 0
-	+opacity(0.5)
-	+box-shadow(0px 1px 0px rgba(255, 255, 255, 1))
-
-.just
-	text-align: justify
-	font-size: 0.1px
-	+r(420)
-		text-align: center
-	&:after
-		width: 100%
-		content: ""
-		display: inline-block
-
-.info p
-	font-size: 16.67px*0.85
-	+bold
-	line-height: 25px*0.85
-	color: #fff
-
-.info__price
-	font-size: 66.67px*0.85
-	line-height: 1
-	color: #fff
-	+reg
-	display: block
-	-ms-word-break: break-all
-	word-break: break-all
-	padding: 16px*0.85 0
-	+r(420)
-		font-size: 48px*0.85
-	.rub
-		+rubl
-		font-style: normal
-		font-size: 38.4px*0.85
-		+r(420)
-			font-size: 33.6px*0.85
-
-.info__right
-	margin-left: 8px
-	float: right
-	+r(420)
-		margin: 0
-		text-align: center
-		float: none
-
-.info__left
-	overflow: hidden
-	max-width: 200px*0.85
-	float: left
-	width: 100%
-	+r(420)
-		max-width: 100%
-		float: none
-		text-align: center
-
-.info__bottom
-	clear: both
-	padding: 6px 0 0 0
-	+r(480)
-		text-align: center
-
-.info .logos
-	margin-top: 20px*0.85
-	+r(420)
-		margin: 8px*0.85 0 8px*0.85
-
-.info__phone
-	font-size: 17.84px*0.85
-	+bold
-	color: #2d2d2a
-	display: block
-	padding: 8px 0 0 0
-
-.info .details
-	font: 14px*0.85 "Lucida Console", Monaco, monospace
-	padding-top: 10px*0.85
-	color: #444
-	b
-		color: #000
-
-.cards
-	font-size: 0.1px
-	margin-bottom: 40px
-	margin: 0 -8px
-	*zoom: 1
-	padding: 8px 0
-	+clr
-	h2
-		text-transform: uppercase
-		margin-bottom: 28px
-		text-align: left
-		display: inline-block
-		width: 100%
-		max-width: 555px*0.85
-
-.cards__left, .cards__right
-	float: left
-	width: 50%
-	padding: 0 8px
-	+box
-	+r(1024)
-		width: 100%
-		margin: 0 auto
-		display: block
-		float: none
-		max-width: 520px
-
-.cards__left .card, .cards__right .card
-	display: inline-block
-	vertical-align: top
-	width: 100%
-	text-align: left
-
-.cards__left
-	position: relative
-	text-align: left
-	&:before
-		content: ""
-		position: absolute
-		right: 0
-		top: 50px
-		bottom: 51.2px
-		width: 1px
-		background: rgba(255, 255, 255, 0.44)
-		+r(1024)
-			top: auto
-			bottom: 26px
-			left: 0
-			right: 0
-			width: auto
-			height: 1px
-
-.cards__right
-	text-align: right
-	h2
-		width: 100%
-.amount
-	margin: 0 auto
-	max-width: 400px*0.85
-	text-align: center
-	.input
-		margin-bottom: 50px*0.85
-	.btn
-		max-width: 350px*0.85
-
-.text
-	background: white
-	padding: 35px*0.85 30px*0.85 30px*0.85
-	+box
-	*zoom: 1
-	+clr
-	+r(768)
-		padding: 20px*0.85 16px*0.85 16px*0.85 
-	ol
-		list-style-type: decimal
-		padding-left: 40px*0.85
-	li
-		font-size: 20.83px*0.85
-		line-height: 1.2
-		+bold
-		color: #222222
-		margin-bottom: 20px*0.85
-		+r(480)
-			font-size: 16px
-		a
-			color: #2abfda
-			+transition(color 0.3s)
-			&:hover
-				color: #37c3dc
-				text-decoration: underline
-	p, h3, .back, .more
-		font-size: 20.83px*0.85
-		line-height: 25px*0.85
-		color: #222222
-		+r(768)
-			font-size: 16px*0.85
-	p
-		margin-bottom: 16px*0.85
-		+reg
-	h3
-		text-transform: uppercase
-		text-align: center
-		+bold
-		margin-bottom: 24px*0.85
-	h2
-		+bold
-		margin-bottom: 20px*0.85
-		color: #2d2d2a 
-		+r(768)
-			font-size: 16px*0.85
-	.back, .more
-		color: #2abfda
-		position: relative
-		font-size: 16.67px*0.85
-		+bold
-		display: inline-block
-		+r(768)
-			font-size: 14px*0.85
-	.back:hover, .more:hover
-		text-decoration: underline
-	.back.back, .more.back
-		padding: 0 0 0 12px*0.85
-		margin-bottom: 24px*0.85
-	.back.back:before, .more.back:before
-		content: ""
-		+s(back)
-		position: absolute
-		top: 50%
-		left: 0
-		margin-top: -6px
-	.back.more, .more.more
-		float: right
-
-
-.text_mod
-	max-width: 660px*0.85
-.overlay, .popup-wrapper
-	position: fixed
-	top: 0
-	left: 0
-	bottom: 0
-	right: 0
-	min-width: 320px
-	z-index: 999
-	display: block
-
-.overlay
-	background: #278e8f
-	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=41)
-	opacity: 0.41
-
-.popup-wrapper
-	text-align: center
-	font-size: 0
-	padding: 8px
-	+vertical
-
-.popup
-	display: inline-block
-	vertical-align: middle
-	width: 100%
-	max-width: 643px
-	+box
-	padding: 36px 32px 40px
-	background: white
-	+box-shadow(0 0 4px rgba(94, 94, 94, 0.65))
-	+r(480)
-		padding: 20px 16px 24px
-
-.popup__text, .popup__sec
-	font-size: 16.666px
-	line-height: 23.333px
-	color: #2d2d2a
-	display: block
-
-.popup__text
-	+bold
-	margin-bottom: 16px
-
-.popup__sec
-	+reg
-	margin-bottom: 24px
-
-.popup__numbers
-	font-size: 71.4px
-	line-height: 56px
-	color: #2d2d2a
-	+thin
-	display: block
-	margin-bottom: 8px
-
-.popup .btn
-	width: 100%
-	max-width: 244.8px
-
-.pay-success .topper
-	text-align: center
-	margin-bottom: 32px
-	.heading
-		margin: 0
-
-.pay-success__block
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#72ffffff, endColorstr=#72ffffff)
-	background: rgba(255, 255, 255, 0.72)
-	max-width: 480px
-	margin: 0 auto 40px
-	padding: 15.2px 16.8px 28px 36px
-	+box
-
-.pay-success .info
-	.info__right
-		float: right
-		+r(480)
-			float: none
-			text-align: center
-			margin-bottom: 16px
-	.info__left
-		padding: 20px 0 0 0
-		+r(480)
-			float: none
-			text-align: center
-			max-width: 100%
-			margin-bottom: 16px
-	.logos
-		margin: 0
-	.info__price
-		padding: 8px 0 0
-
-.pay-success__bottom
-	text-align: center
-	margin-bottom: 40px
-	h4
-		font-size: 16.666px
-		line-height: 1.15
-		color: white
-		letter-spacing: 0.05em
-		+bold
-		text-transform: uppercase
-		margin-bottom: 20px
-	.input-wrap
-		max-width: 320px
-		margin: 0 auto 18px
-
-.landing
-	min-height: 100%
-	min-width: 320px
-
-.landing__inner
-	max-width: 720px
-	margin: 0 auto
-	padding: 16px 16px 0
-	+r(480)
-		padding: 16px 0 0
-
-.p-logo
-	margin: 0 auto
-	display: block
-	width: 100px
-	height: 70.4px
-	border: 3px solid white
-	text-align: center
-	font-size: 0
-	+vertical
-	img
-		display: inline-block
-		vertical-align: middle
-.lan
-	width: 100%
-	padding: 12px 0 10.4px 0
-
-.lan__top
-	background: white
-	text-align: center
-	padding: 13.6px 16px 29.6px
-	+r(480)
-		padding: 13.6px 8px 21.6px
-
-	p, li
-		+reg
-		font-size: 13px
-		margin-bottom: 5px
-		color: #464646
-	p strong
-		+bold
-	a
-		margin-bottom: 8px
-		display: inline-block
-		&:visited
-			margin-bottom: 8px
-			display: inline-block
-	p a, li a
-		margin-bottom: 0
-
-.lan__body
-	background: rgba(255, 255, 255, 0.7)
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#70ffffff, endColorstr=#70ffffff)
-	padding: 24px 44px 16px
-	+r(768)
-		padding: 24px 20px 16px 
-	+r(480)
-		padding: 16px 8px 8px 
-	h2
-		text-transform: uppercase
-		text-align: center
-		color: #464646
-		margin-bottom: 20px
-
-.lan__title
-	+bold
-	font-size: 12.8px
-	color: #464646
-	display: block
-	text-transform: uppercase
-	margin-bottom: 6px
-	text-align: left
-
-.lan__row
-	font-size: 0
-
-.lan__select
-	display: inline-block
-	width: 100%
-	max-width: 320px
-	margin-bottom: 16px
-	margin-right: 40px
-	+r(800)
-		margin-right: 16px
-	+r(480)
-		margin-right: 0
-	.select
-		&:after
-			position: absolute
-			top: 0
-			right: 0
-			bottom: 0
-			width: 44px
-			background: #2bb9e6
-			content: ""
-			z-index: 10
-		i
-			border: none
-			background: url('../img/icons-se64f4f7d8d.png') 0 0 no-repeat
-			width: 6px
-			height: 3px
-			z-index: 11
-			top: 50%
-			margin-top: -2px
-
-.lan__input
-	display: inline-block
-	width: 128px
-	margin-bottom: 16px
-
-.lan__inputs
-	width: 168px
-	font-size: 0
-
-.lan__in
-	margin-right: 16px
-	width: 68px
-	display: inline-block
-	vertical-align: top
-	margin-bottom: 16px
-
-.lan__amount
-	width: 152px
-	margin-bottom: 8px
-
-.lan__footnote
-	font-size: 11.2px
-	+reg
-	color: #464646
-
-.lan__center
-	padding: 32px 0 0 0
-	text-align: center
-	.btn
-		display: block
-		margin: 0 auto 15.2px
-		max-width: 100%
-	.p-btn
-		display: block
-		margin: 0 auto 15.2px
-		max-width: 226px
-
-.lan
-	.text-small
-		+reg
-		font-size: 9.6px
-		color: #6d6a6a
-		display: block
-		margin-bottom: 10.4px
-	.ipsp
-		display: inline-block
-		background: url('../img/icons-se64f4f7d8d.png') 0 -166px no-repeat
-		width: 66px
-		height: 27px
-
-.p-footer
-	background-color: white
-	max-width: 680px
-	margin: 0 auto
-	padding: 0 20px 0
-
-.p-inner
-	max-width: 720px
-	margin: 0 auto
-	padding: 20px 16px 8px
-	*zoom: 1
-	+clr
-	+r(768)
-		text-align: center
-	h3
-		+bold
-		font-size: 12.8px
-		color: #3b3b3b
-		text-align: center
-		text-transform: uppercase
-		margin-bottom: 12px
-	h4, p
-		font-size: 11.2px
-		line-height: 16px
-		color: #3b3b3b
-	h4
-		+bold
-		text-transform: uppercase
-	p
-		+reg
-
-.p-left
-	float: left
-	max-width: 280px
-	width: 100%
-	+r(768)
-		float: none
-		max-width: 100%
-
-.p-right
-	float: right
-	max-width: 280px
-	+r(768)
-		float: none
-		max-width: 100%
-
-.p-box
-	margin-bottom: 14.4px
-	p
-		max-width: 192px
-		+r(768)
-			max-width: 100%
-
-
-
-@-webkit-keyframes rotator, @keyframes rotator
-	0% 
-		-webkit-transform: rotate(0deg)
-		transform: rotate(0deg)
-	100%
-		-webkit-transform: rotate(270deg)
-		transform: rotate(270deg)
-@-webkit-keyframes colors, @keyframes colors
-	0%
-		stroke: #ff5325
-	25%
-		stroke: #edf000
-	50%
-		stroke: #ff5325
-	75%
-		stroke: #edf000
-	100%
-		stroke: #ff5325
-@-webkit-keyframes dash, @keyframes dash
-	0%
-		stroke-dashoffset: 187
-	50%
-		stroke-dashoffset: 46.75
-		-webkit-transform: rotate(135deg)
-		transform: rotate(135deg)
-	100%
-		stroke-dashoffset: 187
-		-webkit-transform: rotate(450deg)
-		transform: rotate(450deg)
-		
-.suggestions-input
-	border: none
-
-.suggestions-suggestion
-	font-size: 14px
-
-.spinner
-	-webkit-animation: rotator 1.4s linear infinite
-	animation: rotator 1.4s linear infinite
-
-
-
-.suggestions-input
-	border: none
-
-.suggestions-suggestion
-	font-size: 14px
-
-
-.spinner
-	-webkit-animation: rotator 1.4s linear infinite
-	animation: rotator 1.4s linear infinite
-
-.path
-	stroke-dasharray: 187
-	stroke-dashoffset: 0
-	-webkit-transform-origin: center
-	-ms-transform-origin: center
-	transform-origin: center
-	-webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite
-	animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite
-
-
-.social_buttons
-	padding: 20px 0
-
-
-.btn-blue a
-	color: #ffffff
-
-
-
-
-.payment-left
-	width: 58%
-	+r(1024)
-		width: 100%
-
-.payment-right
-	width: 42%
-	position: relative	
-	float: right
-	+clr
-	&_mod
-		&:before
-			content: "" 
-			position: absolute
-			top: 20px
-			height: 385px
-			border-left: 1px solid #fff
-			+opacity(0.44)
-			+r(1024)
-				display: none
-	+r(1024)
-		width: 100%
-		float: none
-		margin: 0 auto 24px
-	.info
-		max-width: 400px*0.85
-		float: right
-		width: 100%
-		+r(1024)
-			float: none
-			margin: 0 auto
-.payment-form .main__title
-	color: #333333
-
-.popup-container
-	display: none
-
-.pay-success__block .info__left
-	max-width: 280px
-
-.logos
-	img
-		width: 156px*0.85
-		height: 156px*0.85
-	a
-		span
-			display: block
-			vertical-align: middle
-			width: 100%
-			font-size: 13.333px
-			line-height: 1
-			+bold
-			color: #222222
-			max-width: 112px
-		&:before
-			-moz-transition: none
-			-o-transition: none
-			-webkit-transition: none
-			transition: none
-			content: normal
-			position: absolute
-			top: 0
-			right: 0
-			left: 0
-			bottom: 0
-
-
-
-
-
-
-.form-group
-	clear: both
-
-.input-wrap
-	.input-error
-		display: none
-	&.error .input-error
-		display: block
-		margin-top: -15px
-
-.transfer .input-wrap.error .input-error
-
-.input-wrap.error .input
-	border-color: #ff6b6b
-	background: #ffdede
-
-.payment-form
-	.input-error
-		top: 75%
-	.form-error
-		font-size: 13px
-		color: #cc3333
-	.legal
-		font-size: 13px
-		a
-			color: #29c4f7
-
-.heading small
-	font-size: 50%
-
-
-
-.steps .subtitle
-	margin-left: 8px
-
-.abroad
-	.btn-blue
-		max-width: 150px*0.85
-
-.step__inner
-	background: rgba(16, 175, 181, 0.7)
-
-.step .instruction .col
-	width: 50%
-	display: inline
-	float: left
-
-
-
-
-
-
-
-.lan__footnote
-	font-size: 13px
-
-.lan__body .pay-service
-	background: none
-
-.hidden
-	display: none
+	font-size: 70%
+	color: #333
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

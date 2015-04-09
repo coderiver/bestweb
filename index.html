@@ -45,108 +45,119 @@
 
 
 	<!-- BEGIN  out-->
-<div class="out bg_0">
+<div class="out out_main bg_0">
 	<!-- begin inner  -->
 	<div class="inner">
 		<!-- begin header  -->
 		<header class="header">
-			<div class="header__inner">
-				<a href="index.html" class="logo">
-					<img src="schet/img/logo-novaplat.png" alt="">
-				</a>
-				<button class="nav_btn"><span></span></button>
-				<div class="nav">
-					<nav>
-						<a href="index.html" class="is-active">Оплата <br/>услуг</a>
-						<a href="transfer.html" class="">Перевод <br/>за границу</a>
-						<a href="to_card.html" class="">Перевод <br/>на карту</a>
-						<a href="to_bank.html" class="">Перевод <br/>на счет</a>			
-					</nav>
-				</div>
-			</div>						
+			<a href="index.html" class="logo">
+				<img src="schet/img/logo.png" alt="">
+			</a>
+			<button class="nav_btn"><span></span></button>
+			<div class="nav">
+				<nav>
+					<a href="index.html" class="is-active">
+						<span>Оплата <br/>услуг</span>
+					</a>
+					<a href="transfer.html" class="">
+						<span>Перевод <br/>за границу</span>
+					</a>
+					<a href="to_card.html"
+					   class="">
+						<span>Перевод <br/>на карту</span>
+					</a>
+					<a href="to_bank.html"
+					   class="">
+						<span>Перевод <br/>на счет</span>
+					</a>
+				</nav>
+			</div>			
 		</header>
 		<!-- end header -->
 
 		<!-- begin container  -->
 		<section class="container">
-			<div class="main main_mod">
 				<div class="topper">
-					<h2 class="heading">ПОПОЛНИТЬ ТЕЛЕФОН</h2>
+		<h1 class="heading">
+			Оплата услуг картой без регистрации
+		</h1>
+	</div>
+	<div class="main main_mod">
+		<div class="topper">
+			<h2>ПОПОЛНИТЬ ТЕЛЕФОН</h2>
+		</div>
+		<div class="main__inner main__inner_mod">
+			<form class="main__form" data-action="/services/phone">
+				<div class="main__field">
+					<span class="main__title">номер телефона</span>
+					<label class="input-wrap">
+						<input type="tel" name="parameters[phoneNumber]" class="input phone_number mb_phone_ru" placeholder="+7 (901) 234 5678"/>
+						<span class="input-error"></span>
+					</label>
+					<span class="main__title">Сумма</span>
+					<label class="input-wrap">
+						<input type="text" name="amount" class="input input_amount" value="150"/>
+						<span class="placeholder">руб.</span>
+						<span class="input-error"></span>
+					</label>
 				</div>
-				<div class="main__inner main__inner_mod">
-					<form class="main__form" data-action="/services/phone">
-						<div class="main__field">
-							<span class="main__title">номер телефона</span>
-							<label class="input-wrap">
-								<input type="tel" name="parameters[phoneNumber]" class="input phone_number mb_phone_ru" placeholder="+7 (901) 234 5678"/>
-								<span class="input-error"></span>
-							</label>
-							<span class="main__title">Сумма</span>
-							<label class="input-wrap">
-								<input type="text" name="amount" class="input input_amount" value="150"/>
-								<span class="placeholder">руб.</span>
-								<span class="input-error"></span>
-							</label>
-						</div>
-						<a href="#" class="main__logo"><img src="schet/img/logo-op.png" alt=""></a>
-						<div class="main__submit">
-							<input type="submit" class="btn btn-orange" value="Оплатить">							
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="payment">
-				<div class="topper">
-					<h2 class="heading">ОПЛАТИТЬ УСЛУГУ</h2>
-					<div class="search">
-						<input type="text" class="search__keyword" placeholder="Найти компанию">
-						<button class="search__btn"></button>
+																	<input type="submit" class="btn btn-yellow" value="Оплатить">
+			</form>
 					</div>
-				</div>
-				<div class="service">
-					<ul>
-						<li class="is-circle">
-							<a href="categories/3.html">
-								<div><i class="i-mobile"></i></div>
-								<span>Мобильная связь</span>
-							</a>
-						</li>
-						<li class="is-circle">
-							<a href="categories/6.html">
-								<div><i class="i-piggy"></i></div>
-								<span>Платежные системы</span>
-							</a>
-						</li>
+	</div>
+	<div class="payment">
+		<div class="topper">
+			<h2 class="">Популярные</h2>
 
-						<li class="">
-							<a href="categories/5.html">
-								<div><i class="i-wifi"></i></div>
-								<span>Интернет провайдеры</span>
-							</a>
-						</li>
-						<li class="">
-							<a href="categories/18.html">
-								<div><i class="i-satellite"></i></div>
-								<span>Телевидение</span>
-							</a>
-						</li>
-
-						<li class="">
-							<a href="categories/4.html">
-								<div><i class="i-rocket"></i></div>
-								<span>Игры и социальные сети</span>
-							</a>
-						</li>
-						<li class="">
-							<a href="categories/20.html">
-								<div><i class="i-shield"></i></div>
-								<span>Охранные службы</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<a href="categories/3.html" class="btn btn-blue">ВСЕ УСЛУГИ</a>
+			<div class="search">
+				<input type="text" class="search__keyword" placeholder="Найти компанию">
+				<button class="search__btn"></button>
 			</div>
+																</div>
+		<div class="service">
+			<ul>
+				<li class="is-circle">
+					<a href="categories/3.html">
+						<div><i class="i-mobile"></i></div>
+						<span>Мобильная связь</span>
+					</a>
+				</li>
+				<li class="is-circle">
+					<a href="categories/6.html">
+						<div><i class="i-piggy"></i></div>
+						<span>Платежные системы</span>
+					</a>
+				</li>
+
+				<li class="">
+					<a href="categories/5.html">
+						<div><i class="i-wifi"></i></div>
+						<span>Интернет провайдеры</span>
+					</a>
+				</li>
+				<li class="">
+					<a href="categories/18.html">
+						<div><i class="i-satellite"></i></div>
+						<span>Телевидение</span>
+					</a>
+				</li>
+
+				<li class="">
+					<a href="categories/4.html">
+						<div><i class="i-rocket"></i></div>
+						<span>Игры и социальные сети</span>
+					</a>
+				</li>
+				<li class="">
+					<a href="categories/20.html">
+						<div><i class="i-shield"></i></div>
+						<span>Охранные службы</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<a href="categories/3.html" class="btn btn-orange">ВСЕ УСЛУГИ</a>
+	</div>
 		</section>
 		<!-- end container -->
 	</div>

@@ -1,223 +1,218 @@
-.input, .suggestions-suggestion, .input__spinner
+.input, .suggestions-suggestion
 	width: 100%
-	padding: 15px*0.85 30px*0.85 16px*0.85
-	border: 1px solid white
+	padding: 11.2px 22.4px
+	border: 1px solid #fff
 	+box
-	+reg
-	font-size: 20.83px*0.85
-	letter-spacing: 0.025em
+	+rreg
+	+fs(16)
+	letter-spacing: 0.025em 
 	color: #222222
-	background: white
-	line-height: 1.3
-	+r(600)
-		padding: 15px*0.85 20px*0.85 16px*0.85 
-// select.input
-// 	height: 46px
-// 	text-indent: 14px
-
-.input
+	background: #fff  
+	line-height: 1.3 
 	+placeholder
-		// +italic
-
-.input_amount
-	padding: 12.8px*0.85 56px*0.85 12.8px*0.85 24px*0.85
-
-.input.error
-	border-color: #ff6b6b
-	background: #ffdede
-
+		+italic
+	&_amount
+		padding: 12.8px 56px 12.8px 24px
+	&.error
+		border-color: #ff6b6b 
+		background: #ffdede 
+select.input
+	height: 46px
+	text-indent: 14px
 .input-wrap
 	position: relative
 	display: block
-	margin-bottom: 27px*0.85
+	margin-bottom: 15px
 	.placeholder
 		position: absolute
 		top: 50%
-		right: 25px
-		margin-top: -24px*0.85
-		+reg
-		font-size: 20px*0.85
-		letter-spacing: 0.025em
+		right: 20px
+		margin-top: -8px
+		+italic
+		+fs(16)
+		letter-spacing: 0.025em 
 		color: #222222
-		+opacity(0.5)
-		line-height: 48px*0.85
-		font-style: italic
-
+		+opacity(0.5)  
+		line-height: 16px
 .input-note
-	font-size: 12px*0.85
+	font-size: 12px
 	color: #666
 	margin: -10px 0 10px 0
 	text-align: left
-
 .input-error
 	+reg
-	font-size: 13.3px*0.85
+	+fs(13.3)
 	line-height: 1.2
 	position: absolute
 	top: 100%
 	right: -48px
-	padding: 6px*0.85 13.6px*0.85 6.4px*0.85
-	color: white
-	background: #ff6b6b
-	&:before
-		content: ""
-		width: 0
-		height: 0
-		border-style: solid
-		border-width: 0 0 6px 9px
-		border-color: transparent transparent #ff6b6b transparent
-		position: absolute
-		right: 76px
-		bottom: 100%
-	+r(1024)
-		right: -20px
+	padding: 6px 13.6px 6.4px
+	color: #fff 
+	background: #ff6b6b 
 	+r(600)
 		right: -16px
-
 	+r(480)
-		font-size: 11.2px
-		
-.btn
-	border: 1px solid white
-	+bold
-	line-height: 24px*0.85
-	font-size: 20.83px*0.85
-	letter-spacing: 0.05em
-	color: #ffffff
+		+fs(11.2)
+	&:before
+		content: "" 
+		+arr(9, 6, #ff6b6b, br)
+		position: absolute
+		right: 76px
+		bottom: 100% 
+.search
+	position: relative
+	border: 1.6px solid #fff
+	border-top: none
+	border-right: none
 	display: inline-block
-	text-transform: uppercase
-	+transition(background 0.2s linear)
+	vertical-align: top
+	margin-bottom: 11.2px
+	width: 100%
+	max-width: 264px
+	&__keyword
+		color: #fff
+		width: 100%
+		padding: 5px 16px 7.2px 38.4px
+		+box 
+		+fs(16)
+		background: none
+		+transition(opacity .2s linear)
+		+rreg
+		color: #222222 
+		+placeholder
+			color: #fff
+			+opacity(0.22)
+			+italic	
+	&__btn
+		+s(search)
+		+opacity(0.65)	
+		position: absolute
+		top: 9px
+		left: 12px
+.search_dark
+	.search__keyword
+		color: #222222
+		+placeholder
+			color: #222222
+			+opacity(0.5) 
+.btn
+	border: 1px solid #fff
+	+bold
+	line-height: 1.13
+	+fs(16)
+	letter-spacing: 0.05em 
+	color: #2d2d2a 
+	display: inline-block
+	+ttu
+	+transition(background .2s linear)
 	position: relative
 	text-align: center
-	padding: 24px*0.85 25px*0.85 22px*0.85
-	+box
-	width: 100%
-	max-width: 250px*0.85
+	padding: 20px 44px 18px
+	+box  
 	&:active
 		top: 1px
-
-.btn-yellow
-	background: #fcff00
-	color: #222
-	&:hover
-		background: #edf000
-
-.btn-orange
-	background: #ff5325
-	color: white
-	&:hover
-		background: #ff4716
-
-.btn-blue
-	background: #25bfb2
-	color: white
-	&:hover
-		background: #36abb1
-
+	&-yellow
+		background: #fcff00 
+		&:hover
+			background: darken(#fcff00, 3%) 
+	&-orange
+		background: #ff5325
+		color: #fff  
+		&:hover
+			background: darken(#ff5325, 3%) 
+	&-blue
+		background: #3ab6bd
+		color: #fff 
+		&:hover
+			background: darken(#3ab6bd, 3%) 
 .btn-yellow:disabled, .btn-orange:disabled, .btn-blue:disabled
 	background: #aaaaaa
 	color: white
-	cursor: default
+	cursor: default			
 
+
+//spinner
 .spinner-wrap
 	position: relative
 	display: inline-block
-
-
+.input__spinner
+	padding: 16px 40px 16px 30px
+	width: 148px
+	+box
+	+fs(20.83)
+	letter-spacing: 0.025em 
+	+rreg
+	line-height: 1.3 
+	+r(480)
+		width: 120px
 .ui-spinner-up, .ui-spinner-down
 	position: absolute
 	right: 0
-	width: 32px*0.85
-	height: 27px*0.85
-	text-align: center
-	font-size: 0
+	width: 40px
+	height: 27px
+	+vertical
 	cursor: pointer
 	text-align: right
-
-.ui-spinner-up:before, .ui-spinner-down:before
-	content: ""
-	display: inline-block
-	vertical-align: middle
-	width: 0
-	height: 100%
-
-.ui-spinner-up .ui-icon, .ui-spinner-down .ui-icon
-	font-size: 0
-	display: block
-
-.ui-spinner-up .ui-button-text, .ui-spinner-down .ui-button-text
-	margin-right: 19.2px*0.85
-
-@media only screen and (max-width: 480px)
-	.ui-spinner-up .ui-button-text, .ui-spinner-down .ui-button-text
-		margin-right: 12px*0.85
-
-.ui-spinner-up .ui-button-text, .ui-spinner-down .ui-button-text
-	width: 9px
-	height: 5px
-	display: inline-block
-
+	.ui-icon
+		+fs(0)
+		display: block
+	.ui-button-text
+		margin-right: 24px
+		+r(480)
+			margin-right: 15px
+	.ui-button-text
+		width: 11px
+		height: 6px
+		display: inline-block
 .ui-spinner-up
 	top: 0
 	.ui-button-text
 		vertical-align: bottom
 	.ui-icon
-		width: 0
-		height: 0
-		border-style: solid
-		border-width: 0 4.4px 5px 4.4px
-		border-color: transparent transparent #101010 transparent
-
+		+arr(11, 6, #101010, t)
 .ui-spinner-down
 	bottom: 0
 	.ui-button-text
 		vertical-align: top
 	.ui-icon
-		width: 0
-		height: 0
-		border-style: solid
-		border-width: 5px 4.4px 0 4.4px
-		border-color: #101010 transparent transparent transparent
-
+		+arr(11, 6, #101010, b)
 .ui-spinner
 	position: relative
 	display: inline-block
-
+	
+//select
 .select
 	position: relative
-	font-size: 20.83px*0.85
-	color: #222222 
+	+vertical
 	cursor: pointer
 	width: 100%
-	+reg
 	+user-select(none)
 	text-align: left
-	background: white
-	margin-bottom: 20px*0.85
+	background: #fff 
+	margin-bottom: 20px
 	i
-		+arr(10, 6, #222, b)
+		+arr(11, 6, #101010, b)
 		position: absolute
 		top: 50%
-		right: 20px
+		right: 25px
 		margin-top: -3px
-
 .select__text
 	position: relative
 	display: block
 	vertical-align: middle
-	padding: 16px*0.85 60px*0.85 15px*0.85 30px*0.85
+	padding: 16px 30px
 	+box
-	background: white
-	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50)
-	opacity: 0.5
-	+transition(opacity 0.3s)
-	line-height: 1.3	
-	+r(600)
-		padding: 16px*0.85 40px*0.85 15px*0.85
+	+italic
+	+fs(20.83)
+	letter-spacing: 0.025em 
+	color: #222222
+	background: #fff
+	+opacity(0.5)
+	+tr(opacity 0.3s)
+	line-height: 1.3 
 	&.is-active
-		filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false)
-		opacity: 1
-
+		+opacity(1)
+		+rreg
 .select__list
 	position: absolute
 	display: none
@@ -228,79 +223,59 @@
 	overflow: hidden
 	li
 		cursor: pointer
-		padding: 11px*0.85 60px*0.85 10px*0.85 30px*0.85
+		padding: 10px 30px
 		+box
-		background: white
-		border-top: 1px solid #e6e6e6
-		+transition(background 0.3s)
+		+italic
+		+fs(20.83)
+		letter-spacing: 0.025em 
+		color: #222222
+		background: #fff
+		border-top: 1px solid darken(#fff, 10%) 
+		+tr(background 0.3s)
 		&:hover
-			background: #e6e6e6
-		
-		+r(600)
-			padding: 16px*0.85 20px*0.85 15px*0.85
-
+			background: darken(#fff, 10%) 
+//p-select
 .p-select
 	position: relative
-	font-size: 0
+	+vertical
 	cursor: pointer
 	width: 100%
-	-moz-user-select: -moz-none
-	-ms-user-select: none
-	-webkit-user-select: none
-	user-select: none
+	+user-select(none)
 	text-align: left
-	background: white
-	&:before
-		content: ""
-		display: inline-block
-		vertical-align: middle
-		width: 0
-		height: 100%
+	background: #fff 
 	&:after
 		position: absolute
 		top: 0
 		right: 0
 		bottom: 0
-		width: 44px
+		width: 55px
 		background: #2bb9e6
-		content: ""
-		z-index: 10
+		content: "" 
+		z-index: 10  
+		+r(480)
+			width: 40px
 	i
 		position: absolute
-		background: url('../img/icons-se64f4f7d8d.png') 0 0 no-repeat
-		width: 6px
-		height: 3px
-		z-index: 11
+		+s(arr-down)
+		z-index: 11 
 		top: 50%
-		right: 20px
+		right: 25px
 		margin-top: -2px
-
-@media only screen and (max-width: 480px)
-	.p-select:after
-		width: 32px
-
-@media only screen and (max-width: 480px)
-	.p-select i
-		right: 13.6px
-
+		+r(480)
+			right: 17px
 .p-select__text
 	position: relative
 	display: block
 	vertical-align: middle
-	padding: 12.8px 44px 12.8px 18px
-	-moz-box-sizing: border-box
-	-webkit-box-sizing: border-box
-	box-sizing: border-box
+	padding: 16px 55px 16px 23px
+	+box
 	+rreg
-	font-size: 12.8px
-	letter-spacing: 0.025em
+	font-size: 16px
+	letter-spacing: 0.025em 
 	color: #222222
-	background: white
-
-@media only screen and (max-width: 480px)
-	.p-select__text
-		font-size: 11.2px
-
+	background: #fff
+	+r(480)
+		font-size: 14px
 .p-select__list
 	position: absolute
 	display: none
@@ -311,70 +286,56 @@
 	overflow: hidden
 	li
 		cursor: pointer
-		padding: 8px 18px
-		-moz-box-sizing: border-box
-		-webkit-box-sizing: border-box
-		box-sizing: border-box
+		padding: 10px 23px
+		+box
 		+rreg
-		font-size: 12.8px
-		letter-spacing: 0.025em
+		font-size: 16px
+		letter-spacing: 0.025em 
 		color: #222222
-		background: white
-		border-top: 1px solid #e6e6e6
+		background: #fff
+		border-top: 1px solid darken(#fff, 10%) 
 		&:hover
-			background: #e6e6e6
+			background: darken(#fff, 10%) 
+		+r(480)
+			font-size: 14px
 
-@media only screen and (max-width: 480px)
-	.p-select__list li
-		font-size: 11.2px
-
+//p-input
 .p-input
 	width: 100%
-	padding: 12.8px 18px
-	-moz-box-sizing: border-box
-	-webkit-box-sizing: border-box
-	box-sizing: border-box
+	padding: 16px 23px
+	+box
 	+rreg
-	font-size: 12.8px
-	letter-spacing: 0.025em
+	font-size: 16px
+	letter-spacing: 0.025em 
 	color: #222222
-	background: white
-	&:-ms-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder, &::placeholder
+	background: #fff 
+	+placeholder
 		+italic
-
-@media only screen and (max-width: 480px)
-	.p-input
-		font-size: 11.2px
-
+	+r(480)
+		font-size: 14px
+//p-btn
 .p-btn
-	border: 1px solid white
+	border: 1px solid #fff
 	+bold
 	line-height: 1.13
-	font-size: 11.2px
-	color: #2d2d2a
+	font-size: 14px
+	color: #2d2d2a 
 	display: inline-block
-	text-transform: uppercase
-	-moz-transition: background 0.2s linear
-	-o-transition: background 0.2s linear
-	-webkit-transition: background 0.2s linear
-	transition: background 0.2s linear
+	+ttu
+	+transition(background .2s linear)
 	position: relative
 	text-align: center
-	padding: 9.6px 24px 9.6px
-	-moz-box-sizing: border-box
-	-webkit-box-sizing: border-box
-	box-sizing: border-box
-	background: #fcff00
+	padding: 12px 30px 12px
+	+box  
+	background: #fcff00 
 	&:after
 		position: absolute
 		top: 50%
-		right: 12.8px
-		margin-top: -3px
-		content: ""
-		background: url('../img/icons-se64f4f7d8d.png') 0 -203px no-repeat
-		width: 4px
-		height: 7.2px
+		right: 16px
+		margin-top: -4px
+		content: "" 
+		+s(p-arr)
 	&:active
 		top: 1px
 	&:hover
-		background: #edf000
+		background: darken(#fcff00, 3%) 
