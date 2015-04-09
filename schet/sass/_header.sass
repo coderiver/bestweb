@@ -13,13 +13,13 @@
 	float: left
 	text-align: center
 	font-size: 0
-	width: 133px
-	height: 110px
+	width: 133px*0.85
+	height: 110px*0.85
 	padding: 10px 0 0 
 	+vertical
 	+box
 	+r(980)
-		height: 90px
+		height: 75px
 	+r(768)
 		display: inline-block
 		float: none
@@ -48,16 +48,18 @@
 	nav
 		display: table
 		width: 100%
+		border-collapse: collapse
 		+r(768)
 			display: block
 	a
 		border: 1px solid white
-		font-size: 15.83px
-		line-height: 20px
+		border-right-width: 2px
+		font-size: 15.83px*0.85
+		line-height: 20px*0.85
 		+bold
 		color: white
 		text-transform: uppercase
-		padding: 38px 30px 32px
+		padding: 38px*0.85 30px*0.85 32px*0.85
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#760896d8, endColorstr=#760896d8)
 		background: rgba(8, 150, 216, 0.76)
 		display: table-cell
@@ -65,11 +67,12 @@
 		+box
 		+transition(background 0.3s)
 		+r(980)
-			padding: 27px 20px 22px 
+			padding: 27px*0.85 20px*0.85 22px*0.85 
 		+r(768)
 			display: block
 			width: 100%
-			padding: 18px 16px
+			padding: 18px*0.85 16px*0.85
+			border-right-width: 1px
 			br
 				display: none
 		&:hover
@@ -83,13 +86,14 @@
 				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#400896d8, endColorstr=#400896d8)
 				background: lighten(rgba(8, 150, 216, 0.4), 3%)
 	&.is-open
-		visibility: visible
-		filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false)
-		opacity: 1
-		position: relative
-		z-index: 5
-		margin: 0 auto -2px
-		max-width: 400px
+		+r(768)
+			visibility: visible
+			filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false)
+			opacity: 1
+			position: relative
+			z-index: 5
+			margin: 0 auto -2px
+			max-width: 400px
 
 .nav_btn
 	position: absolute
