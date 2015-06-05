@@ -163,220 +163,190 @@
 					</div>				
 				</div>
 				<div class="top">
-					<a href="#" class="btn">Создать автоплатеж</a>
-					<a href="#" class="btn btn_bg">Автоплатежи</a>
+					<a href="#" class="btn js-tab-btn is-active" data-btn="1">Создать автоплатеж</a>
+					<a href="#" class="btn js-tab-btn" data-btn="2">Автоплатежи</a>
 				</div>
-				<div class="content">
-					<div class="table-wrap">
-						<div class="table">
-							<table>
-								<tr>
-									<th class="is-name"><span>Название автоплатежа</span></th>
-									<th class="is-service"><span>Сервис</span></th>
-									<th class="is-option"><span>Условия автоплатежа</span></th>
-									<th class="is-amount"><span>Сумма</span></th>
-									<th class="is-status"><span>Статус</span></th>
-								</tr>
-								<tr>
-									<td class="is-name">4784565960690</td>
-									<td class="is-service">+70907864589</td>
-									<td class="is-option">при наступлении 7 ...</td>
-									<td class="is-amount">6737 руб.</td>
-									<td class="is-status">Подключен</td>
-								</tr>
-								<tr>
-									<td class="is-name">7689003838597</td>
-									<td class="is-service">+70907898740</td>
-									<td class="is-option">при достижении 50 р ...</td>
-									<td class="is-amount">5000 руб.</td>
-									<td class="is-status">В процессе</td>
-								</tr>
-								<tr>
-									<td class="is-name">7688993776637</td>
-									<td class="is-service">+70906383876</td>
-									<td class="is-option">при достижении 120 р ...</td>
-									<td class="is-amount">10000 руб.</td>
-									<td class="is-status">Подключен</td>
-								</tr>
-							</table>
+				<div class="js-tabs">
+					<!-- begin tab  -->
+					<div class="content js-tab-block is-active" data-block="1">
+						<div class="table-wrap">
+							<div class="table">
+								<table>
+									<tr>
+										<th class="is-name"><span>Название автоплатежа</span></th>
+										<th class="is-service"><span>Сервис</span></th>
+										<th class="is-option"><span>Условия автоплатежа</span></th>
+										<th class="is-amount"><span>Сумма</span></th>
+										<th class="is-status"><span>Статус</span></th>
+									</tr>
+									<tr>
+										<td class="is-name">4784565960690</td>
+										<td class="is-service">+70907864589</td>
+										<td class="is-option">при наступлении 7 ...</td>
+										<td class="is-amount">6737 руб.</td>
+										<td class="is-status">Подключен</td>
+									</tr>
+									<tr>
+										<td class="is-name">7689003838597</td>
+										<td class="is-service">+70907898740</td>
+										<td class="is-option">при достижении 50 р ...</td>
+										<td class="is-amount">5000 руб.</td>
+										<td class="is-status">В процессе</td>
+									</tr>
+									<tr>
+										<td class="is-name">7688993776637</td>
+										<td class="is-service">+70906383876</td>
+										<td class="is-option">при достижении 120 р ...</td>
+										<td class="is-amount">10000 руб.</td>
+										<td class="is-status">Подключен</td>
+									</tr>
+								</table>
+							</div>
+						</div>				
+					</div>
+					<!-- end tab -->
+
+					<!-- begin tab  -->
+					<div class="content js-tab-block" data-block="2">
+						<div class="form">
+							<form action="" class="js-validate js-choice-block is-active" data-block="time">
+								<div class="form__row">
+									<div class="form__col">
+										<span class="label">Номер телефона</span>
+										<div class="phone">
+											<label class="form__label">
+												<span class="phone__text">+7</span>
+												<input type="text" class="input is-small" data-validation="number">
+												<input type="text" class="input is-big" data-validation="number" data-validation-error-msg="нужно ввести номер телефона">
+											</label>									
+										</div>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__col">
+										<span class="label">Тип автоплатежа</span>
+										<div class="select js-select">
+											<span class="select__text js-select-text">По расписанию</span>
+											<ul class="select__list js-select-list">
+												<li data-val="По расписанию" class="js-choice-btn" data-btn="time">По расписанию</li>
+												<li data-val="По порогу баланса" class="js-choice-btn" data-btn="balance">По порогу баланса</li>
+											</ul>
+											<select data-validation="required">
+												<option value="По расписанию" selected="selected">По расписанию</option>
+												<option value="По порогу баланса">По порогу баланса</option>
+											</select>
+										</div>
+									</div>
+									<div class="form__col">
+										<span class="label">Период платежа</span>
+										<div class="days">
+											<label class="form__label">
+												<input type="text" class="input" data-validation="required" data-validation-error-msg="нужно заполнить поле">
+												<span class="days__text">дней</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__col">
+										<span class="label">Расписание</span>
+										<div class="select js-select">
+											<span class="select__text js-select-text">Периодически</span>
+											<ul class="select__list js-select-list">
+												<li data-val="Периодически">Периодически</li>
+												<li data-val="Периодически1">Периодически1</li>
+											</ul>
+											<select data-validation="required">
+												<option value="Периодически">Периодически</option>
+												<option value="Периодически1">Периодически1</option>
+											</select>
+										</div>
+									</div>
+									<div class="form__col">								
+										<span class="label">Дата первого платежа</span>
+										<div class="date">
+											<label class="form__label">
+												<input type="text" class="input" data-validation="required" data-validation-error-msg="нужно заполнить поле">
+												<i class="date__icon"></i>
+											</label>								
+										</div>
+									</div>
+								</div>			
+								<div class="form__row">
+									<div class="form__col">
+										<span class="label">Сумма платежа</span>
+										<div class="amount">
+											<label class="form__label">
+												<input type="text" class="input" data-validation="number" data-validation-error-msg="нужно заполнить поле">
+												<span class="amount__text">руб.</span>
+											</label>									
+										</div>
+									</div>
+								</div>					
+								<div class="form__btn">
+									<button class="btn-simple">Сохранить</button>
+								</div>							
+							</form>
+							<!-- forms -->
+							<form action="" class="js-validate js-choice-block" data-block="balance">
+								<div class="form__row">
+									<div class="form__col">
+										<span class="label">Номер телефона</span>
+										<div class="phone">
+											<label class="form__label">
+												<span class="phone__text">+7</span>
+												<input type="text" class="input is-small" data-validation="number">
+												<input type="text" class="input is-big" data-validation="number" data-validation-error-msg="нужно ввести номер телефона">
+											</label>									
+										</div>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__col">
+										<span class="label">Тип автоплатежа</span>
+										<div class="select js-select">
+											<span class="select__text js-select-text">По порогу баланса</span>
+											<ul class="select__list js-select-list">
+												<li data-val="По расписанию" class="js-choice-btn" data-btn="time">По расписанию</li>
+												<li data-val="По порогу баланса" class="js-choice-btn" data-btn="balance">По порогу баланса</li>
+											</ul>
+											<select data-validation="required">
+												<option value="По расписанию">По расписанию</option>
+												<option value="По порогу баланса" selected="selected">По порогу баланса</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__col">
+										<span class="label">Порог баланса</span>
+										<div class="amount">
+											<label class="form__label">
+												<input type="text" class="input" data-validation="number" data-validation-error-msg="нужно заполнить поле">
+												<span class="amount__text">руб.</span>
+											</label>									
+										</div>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__col">
+										<span class="label">Лимит пополнения в месяц</span>
+										<div class="amount">
+											<label class="form__label">
+												<input type="text" class="input" data-validation="number" data-validation-error-msg="нужно заполнить поле">
+												<span class="amount__text">руб.</span>
+											</label>									
+										</div>
+									</div>
+								</div>					
+								<div class="form__btn">
+									<button class="btn-simple">Сохранить</button>
+								</div>
+							</form>
 						</div>
-					</div>				
-				</div>
-			</div>
-		</div>
-		<div class="section">
-			<i class="clock"></i>
-			<div class="section__inner">
-				<div class="heading">
-					<div>
-						<small>создать</small>
-						<h3>Билайн автоплатеж</h3>
-					</div>				
-				</div>
-				<div class="content">
-					<div class="form">
-						<form action="" class="js-validate">
-							<div class="form__row">
-								<div class="form__col">
-									<span class="label">Номер телефона</span>
-									<div class="phone">
-										<label class="form__label">
-											<span class="phone__text">+7</span>
-											<input type="text" class="input is-small" data-validation="number">
-											<input type="text" class="input is-big" data-validation="number" data-validation-error-msg="нужно ввести номер телефона">
-										</label>									
-									</div>
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__col">
-									<span class="label">Тип автоплатежа</span>
-									<div class="select js-select">
-										<span class="select__text js-select-text">По расписанию</span>
-										<ul class="select__list js-select-list">
-											<li data-val="По расписанию">По расписанию</li>
-											<li data-val="По расписанию1">По расписанию1</li>
-											<li data-val="По расписанию2">По расписанию2</li>
-											<li data-val="По расписанию3">По расписанию3</li>
-										</ul>
-										<select data-validation="required">
-											<option value="По расписанию">По расписанию</option>
-											<option value="По расписанию1">По расписанию1</option>
-											<option value="По расписанию2">По расписанию2</option>
-											<option value="По расписанию3">По расписанию3</option>
-										</select>
-									</div>
-								</div>
-								<div class="form__col">
-									<span class="label">Период платежа</span>
-									<div class="days">
-										<label class="form__label">
-											<input type="text" class="input" data-validation="required" data-validation-error-msg="нужно заполнить поле">
-											<span class="days__text">дней</span>
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__col">
-									<span class="label">Расписание</span>
-									<div class="select js-select">
-										<span class="select__text js-select-text">Периодически</span>
-										<ul class="select__list js-select-list">
-											<li data-val="Периодически">Периодически</li>
-											<li data-val="Периодически1">Периодически1</li>
-											<li data-val="Периодически2">Периодически2</li>
-											<li data-val="Периодически3">Периодически3</li>
-										</ul>
-										<select data-validation="required">
-											<option value="Периодически">Периодически</option>
-											<option value="Периодически1">Периодически1</option>
-											<option value="Периодически2">Периодически2</option>
-											<option value="Периодически3">Периодически3</option>
-										</select>
-									</div>
-								</div>
-								<div class="form__col">								
-									<span class="label">Дата первого платежа</span>
-									<div class="date">
-										<label class="form__label">
-											<input type="text" class="input" data-validation="required" data-validation-error-msg="нужно заполнить поле">
-											<i class="date__icon"></i>
-										</label>								
-									</div>
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__col">
-									<span class="label">Сумма платежа</span>
-									<div class="amount">
-										<label class="form__label">
-											<input type="text" class="input" data-validation="number" data-validation-error-msg="нужно заполнить поле">
-											<span class="amount__text">руб.</span>
-										</label>									
-									</div>
-								</div>
-							</div>
-							<div class="form__btn">
-								<button class="btn-simple">Сохранить</button>
-							</div>
-						</form>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="section">
-			<i class="clock"></i>
-			<div class="section__inner">
-				<div class="heading">
-					<div>
-						<small>создать</small>
-						<h3>Билайн автоплатеж</h3>
-					</div>				
-				</div>
-				<div class="content">
-					<div class="form">
-						<form action="" class="js-validate">
-							<div class="form__row">
-								<div class="form__col">
-									<span class="label">Номер телефона</span>
-									<div class="phone">
-										<label class="form__label">
-											<span class="phone__text">+7</span>
-											<input type="text" class="input is-small" data-validation="number">
-											<input type="text" class="input is-big" data-validation="number" data-validation-error-msg="нужно ввести номер телефона">
-										</label>									
-									</div>
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__col">
-									<span class="label">Тип автоплатежа</span>
-									<div class="select js-select">
-										<span class="select__text js-select-text">По порогу баланса</span>
-										<ul class="select__list js-select-list">
-											<li data-val="По порогу баланса">По порогу баланса</li>
-											<li data-val="По порогу баланса1">По порогу баланса1</li>
-											<li data-val="По порогу баланса2">По порогу баланса2</li>
-											<li data-val="По порогу баланса3">По порогу баланса3</li>
-										</ul>
-										<select data-validation="required">
-											<option value="По порогу баланса">По порогу баланса</option>
-											<option value="По порогу баланса1">По порогу баланса1</option>
-											<option value="По порогу баланса2">По порогу баланса2</option>
-											<option value="По порогу баланса3">По порогу баланса3</option>
-										</select>
-									</div>
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__col">
-									<span class="label">Порог баланса</span>
-									<div class="amount">
-										<label class="form__label">
-											<input type="text" class="input" data-validation="number" data-validation-error-msg="нужно заполнить поле">
-											<span class="amount__text">руб.</span>
-										</label>									
-									</div>
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__col">
-									<span class="label">Лимит пополнения в месяц</span>
-									<div class="amount">
-										<label class="form__label">
-											<input type="text" class="input" data-validation="number" data-validation-error-msg="нужно заполнить поле">
-											<span class="amount__text">руб.</span>
-										</label>									
-									</div>
-								</div>
-							</div>
-							<div class="form__btn">
-								<button class="btn-simple">Сохранить</button>
-							</div>
-						</form>
-					</div>
-				</div>
+					<!-- end tab -->
+				</div>				
 			</div>
 		</div>
 	</div>

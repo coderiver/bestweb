@@ -129,9 +129,42 @@ head.ready(function() {
 	  	});
 
 	 };
-	 $('.js-reset').on('click', function(){
+	$('.js-reset').on('click', function(){
+		$('.js-validate').trigger('reset');
+		$('.js-success').removeClass('is-active');
+	});
+	//tabs
+	$(".js-tab-btn").click(function () {
 
-	  	$('.js-validate').trigger('reset');
-	  	$('.js-success').removeClass('is-active');
-	  });
+		$('.js-tab-btn').removeClass('is-active');
+		$(this).addClass('is-active');
+
+		var id = $(this).data("btn"),
+		$item = $('.js-tab-block');
+
+		var $currItem = $('.js-tab-block[data-block=' + id + ']');
+
+		$('.js-tab-block[data-block=' + id + ']').addClass('is-active');
+		$item.not($currItem).removeClass('is-active');
+
+		return false;
+
+	});
+	$(".js-choice-btn").click(function () {
+
+		$('.js-choice-btn').removeClass('is-active');
+		$(this).addClass('is-active');
+
+		var id = $(this).data("btn"),
+		$item = $('.js-choice-block');
+
+		var $currItem = $('.js-choice-block[data-block=' + id + ']');
+
+		$('.js-choice-block[data-block=' + id + ']').addClass('is-active');
+		$item.not($currItem).removeClass('is-active');
+
+		return false;
+
+	});
+
 });
