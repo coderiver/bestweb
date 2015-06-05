@@ -82,7 +82,7 @@ head.ready(function() {
 	// scrollTop
 	 $(".js-nav-link").click(function (){
 		var page = $(this).attr("href");
-
+		$('.js-nav').removeClass('is-active');
 		$('html, body').animate({
 			scrollTop: $(page).offset().top - 0
 		}, 600);

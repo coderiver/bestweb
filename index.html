@@ -18,12 +18,139 @@
 		<button class="nav__btn js-nav-btn"></button>
 		<nav class="js-nav">
 			<ul>
-				<li><a href="#phone" class="js-nav-link"><i class="is-phone"></i><span>Билайн <br>телефон</span></a></li>
+				<li><a href="#phone" class="js-nav-link is-active"><i class="is-phone"></i><span>Билайн <br>телефон</span></a></li>
 				<li><a href="#inet" class="js-nav-link"><i class="is-inet"></i><span>Билайн <br>интернет</span></a></li>
 				<li><a href="#tv" class="js-nav-link"><i class="is-tv"></i><span>Билайн <br>ТВ</span></a></li>
-				<li><a href="#pay" class="js-nav-link is-active"><i class="is-card"></i><span>Билайн <br>автоплатеж</span></a></li>
+				<li><a href="#pay" class="js-nav-link"><i class="is-card"></i><span>Билайн <br>автоплатеж</span></a></li>
 			</ul>
 		</nav>
+	</div>
+	<div class="js-block" id="phone">
+		<div class="section">
+			<i class="telephone"></i>
+			<div class="section__inner">
+				<div class="heading">
+					<div>
+						<small>оплатить</small>
+						<h3>Билайн телефон</h3>
+					</div>				
+				</div>
+				<div class="content">
+					<div class="form">
+						<form action="" class="js-validate">
+							<div class="form__row">
+								<div class="form__col">
+									<span class="label">Номер телефона</span>
+									<div class="phone">
+										<label class="form__label">
+											<span class="phone__text">+7</span>
+											<input type="text" class="input is-small" data-validation="number">
+											<input type="text" class="input is-big" data-validation="number" data-validation-error-msg="нужно ввести номер телефона">
+										</label>									
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__col">
+									<span class="label">Сумма пополнения</span>
+									<div class="amount">
+										<label class="form__label">
+											<input type="text" class="input" data-validation="required" data-validation-error-msg="нужно заполнить поле">
+											<span class="amount__text">руб.</span>
+										</label>									
+									</div>
+								</div>
+							</div>
+							<div class="form__btn">
+								<button class="btn-simple">Сохранить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="js-block" id="inet">
+		<div class="section">
+			<i class="snowboard"></i>
+			<div class="section__inner">
+				<div class="heading">
+					<div>
+						<small>оплатить</small>
+						<h3>Билайн интернет</h3>
+					</div>				
+				</div>
+				<div class="content">
+					<div class="form">
+						<form action="" class="js-validate">
+							<div class="form__row">
+								<div class="form__col">
+									<span class="label">Номер договора</span>
+									<label class="form__label">
+										<input type="text" class="input" data-validation="number" data-validation-error-msg="нужно ввести номер договора">
+									</label>						
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__col">
+									<span class="label">Сумма пополнения</span>
+									<div class="amount">
+										<label class="form__label">
+											<input type="text" class="input" value="7000" data-validation="required" data-validation-error-msg="нужно заполнить поле">
+											<span class="amount__text">руб.</span>
+										</label>									
+									</div>
+								</div>
+							</div>
+							<div class="form__btn">
+								<button class="btn-simple">Сохранить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="js-block" id="tv">
+		<div class="section">
+			<i class="shoes"></i>
+			<div class="section__inner">
+				<div class="heading">
+					<div>
+						<small>оплатить</small>
+						<h3>Билайн ТВ</h3>
+					</div>				
+				</div>
+				<div class="content">
+					<div class="form">
+						<form action="" class="js-validate">
+							<div class="form__row">
+								<div class="form__col">
+									<span class="label">Номер договора</span>
+									<label class="form__label">
+										<input type="text" class="input" data-validation="required" data-validation-error-msg="нужно ввести номер договора">
+									</label>									
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__col">
+									<span class="label">Сумма пополнения</span>
+									<div class="amount">
+										<label class="form__label">
+											<input type="text" class="input" data-validation="required" data-validation-error-msg="нужно заполнить поле">
+											<span class="amount__text">руб.</span>
+										</label>									
+									</div>
+								</div>
+							</div>
+							<div class="form__btn">
+								<button class="btn-simple">Сохранить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="js-block" id="pay">
 		<div class="section">
@@ -239,133 +366,6 @@
 									<div class="amount">
 										<label class="form__label">
 											<input type="text" class="input" data-validation="number" data-validation-error-msg="нужно заполнить поле">
-											<span class="amount__text">руб.</span>
-										</label>									
-									</div>
-								</div>
-							</div>
-							<div class="form__btn">
-								<button class="btn-simple">Сохранить</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="js-block" id="tv">
-		<div class="section">
-			<i class="shoes"></i>
-			<div class="section__inner">
-				<div class="heading">
-					<div>
-						<small>оплатить</small>
-						<h3>Билайн ТВ</h3>
-					</div>				
-				</div>
-				<div class="content">
-					<div class="form">
-						<form action="" class="js-validate">
-							<div class="form__row">
-								<div class="form__col">
-									<span class="label">Номер договора</span>
-									<label class="form__label">
-										<input type="text" class="input" data-validation="required" data-validation-error-msg="нужно ввести номер договора">
-									</label>									
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__col">
-									<span class="label">Сумма пополнения</span>
-									<div class="amount">
-										<label class="form__label">
-											<input type="text" class="input" data-validation="required" data-validation-error-msg="нужно заполнить поле">
-											<span class="amount__text">руб.</span>
-										</label>									
-									</div>
-								</div>
-							</div>
-							<div class="form__btn">
-								<button class="btn-simple">Сохранить</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="js-block" id="inet">
-		<div class="section">
-			<i class="snowboard"></i>
-			<div class="section__inner">
-				<div class="heading">
-					<div>
-						<small>оплатить</small>
-						<h3>Билайн интернет</h3>
-					</div>				
-				</div>
-				<div class="content">
-					<div class="form">
-						<form action="" class="js-validate">
-							<div class="form__row">
-								<div class="form__col">
-									<span class="label">Номер договора</span>
-									<label class="form__label">
-										<input type="text" class="input" data-validation="number" data-validation-error-msg="нужно ввести номер договора">
-									</label>						
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__col">
-									<span class="label">Сумма пополнения</span>
-									<div class="amount">
-										<label class="form__label">
-											<input type="text" class="input" value="7000" data-validation="required" data-validation-error-msg="нужно заполнить поле">
-											<span class="amount__text">руб.</span>
-										</label>									
-									</div>
-								</div>
-							</div>
-							<div class="form__btn">
-								<button class="btn-simple">Сохранить</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="js-block" id="phone">
-		<div class="section">
-			<i class="telephone"></i>
-			<div class="section__inner">
-				<div class="heading">
-					<div>
-						<small>оплатить</small>
-						<h3>Билайн телефон</h3>
-					</div>				
-				</div>
-				<div class="content">
-					<div class="form">
-						<form action="" class="js-validate">
-							<div class="form__row">
-								<div class="form__col">
-									<span class="label">Номер телефона</span>
-									<div class="phone">
-										<label class="form__label">
-											<span class="phone__text">+7</span>
-											<input type="text" class="input is-small" data-validation="number">
-											<input type="text" class="input is-big" data-validation="number" data-validation-error-msg="нужно ввести номер телефона">
-										</label>									
-									</div>
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__col">
-									<span class="label">Сумма пополнения</span>
-									<div class="amount">
-										<label class="form__label">
-											<input type="text" class="input" data-validation="required" data-validation-error-msg="нужно заполнить поле">
 											<span class="amount__text">руб.</span>
 										</label>									
 									</div>
