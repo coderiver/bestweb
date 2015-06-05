@@ -1,0 +1,461 @@
+.out
+	padding: 0 155px 30px
+	max-width: 1020px
+	min-width: 320px  
+	margin: 0 auto
+	+box
+	+r1
+		padding: 0 20px 30px 124px
+	+r3
+		padding: 0 20px 30px  
+.nav
+	width: 104px
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	background-color: #E9C001
+	background-image: -moz-linear-gradient(52deg, rgba(247, 169, 0, 0.41) 0%, rgba(254, 222, 0, 0.41) 100%)
+	background-image: -o-linear-gradient(52deg, rgba(247, 169, 0, 0.41) 0%, rgba(254, 222, 0, 0.41) 100%)
+	background-image: -webkit-linear-gradient(52deg, rgba(247, 169, 0, 0.41) 0%, rgba(254, 222, 0, 0.41) 100%)
+	background-image: linear-gradient(38deg, rgba(247, 169, 0, 0.41) 0%, rgba(254, 222, 0, 0.41) 100%)
+	z-index: 400
+	overflow: auto
+	+r3
+		bottom: auto
+		right: 0
+		width: auto
+		height: 70px
+		overflow: visible
+	nav
+		display: block
+		padding: 35px 0 0 
+		+r3
+			padding: 0 
+			position: absolute
+			top: 100%
+			right: 0
+			background: #E9C001
+			background-image: -moz-linear-gradient(52deg, rgba(247, 169, 0, 0.41) 0%, rgba(254, 222, 0, 0.41) 100%)
+			background-image: -o-linear-gradient(52deg, rgba(247, 169, 0, 0.41) 0%, rgba(254, 222, 0, 0.41) 100%)
+			background-image: -webkit-linear-gradient(52deg, rgba(247, 169, 0, 0.41) 0%, rgba(254, 222, 0, 0.41) 100%)
+			background-image: linear-gradient(38deg, rgba(247, 169, 0, 0.41) 0%, rgba(254, 222, 0, 0.41) 100%)
+			visibility: hidden
+			+opacity(0)
+			+transition(all 0.3s)
+		&:after
+			position: absolute
+			top: 100%
+			right: 0
+			+arr(12, 10, #E9C001, tr)
+			content: "" 
+			display: none
+			margin: 2px 0 0 
+			+r3
+				display: block
+		&.is-active
+			+opacity(1)
+			visibility: visible
+	li
+		text-align: center
+		margin-bottom: 25px
+		+r3
+			margin: 0  
+			text-align: right
+		a
+			display: inline-block
+			+r3
+				display: block
+				padding: 10px 15px 
+			&.is-active, &:hover
+				span
+					color: #fff
+				i
+					&:after
+						visibility: visible
+						+opacity(1)
+			span
+				display: block
+				color: #000
+				font-size: 13px  
+				line-height: 1
+				+med
+				br
+					+r3
+						display: none
+			i
+				margin: 0 0 5px 
+				position: relative
+				&:after
+					content: "" 
+					position: absolute
+					top: 0
+					left: 0
+					visibility: hidden
+					+opacity(0)
+				&.is-phone
+					+svg(Phone, 18, 32)
+					+r3
+						display: none
+					&:after
+						+svg(Phone-active, 18, 32)
+				&.is-inet
+					+svg(Feed, 26, 26)
+					+r3
+						display: none
+					&:after
+						+svg(Feed-active, 26, 26)
+				&.is-tv
+					+svg(Monitor, 32, 26)
+					+r3
+						display: none
+					&:after
+						+svg(Monitor-active, 32, 26)
+				&.is-card
+					+svg(Card, 32, 21)
+					+r3
+						display: none
+					&:after
+						+svg(Card-active, 32, 21)
+	&__btn
+		position: absolute
+		top: 22px
+		right: 20px
+		width: 35px
+		height: 25px
+		border-top: 3px solid #fff
+		border-bottom: 3px solid #fff
+		background: none 
+		+transition(all 0.1s)
+		display: none
+		+r3
+			display: block
+		&:active
+			margin-top: 1px
+		&:before
+			content: "" 
+			display: block
+			width: 100%
+			height: 3px
+			background: #fff 
+.logo
+	font-size: 0
+	display: block
+	+r3
+		width: 100px
+		height: 100%
+		position: relative
+		overflow: hidden
+	img
+		+r3
+			position: absolute
+			bottom: -12px
+			left: 0
+			width: 100%
+.section
+	+box
+	padding: 128px 0 0 
+	min-height: 700px
+	position: relative
+	+r1
+		min-height: 0 
+	.clock
+		position: absolute
+		bottom: 95px
+		right: 0
+		+s(clock)
+		+r1
+			display: none
+		&.is-opacity
+			+opacity(0.16)
+	.shoes
+		position: absolute
+		bottom: 95px
+		right: 0
+		+s(shoes)
+		+r1
+			display: none
+	.snowboard
+		position: absolute
+		bottom: 0
+		right: -100px
+		+s(snowboard)
+		+r1
+			display: none
+	.telephone
+		position: absolute
+		bottom: 0
+		right: -40px
+		+s(telephone)
+		+r1
+			display: none
+	&__inner
+		position: relative
+		z-index: 10 
+		+r1
+			max-width: 600px
+			margin: 0 auto
+		+r3
+			max-width: 320px
+.heading
+	display: inline-block
+	vertical-align: top
+	background-color: #C82E71
+	background-image: -moz-linear-gradient(53deg, #FEDE00 0%, #F7A900 100%)
+	background-image: -o-linear-gradient(53deg, #FEDE00 0%, #F7A900 100%)
+	background-image: -webkit-linear-gradient(53deg, #FEDE00 0%, #F7A900 100%)
+	background-image: linear-gradient(37deg, #FEDE00 0%, #F7A900 100%)
+	position: relative
+	margin-bottom: 26px
+	&:before, &:after
+		position: absolute
+		content: "" 
+	&:before
+		+arr(15, 13, #fff, tr)
+		top: 0
+		right: -3px
+	&:after
+		+arr(12, 10, #F7A900, tr)
+		top: 1px
+		right: -4px
+	div
+		position: relative
+		z-index: 10
+		padding: 12px 26px  
+		&:after
+			position: absolute
+			content: "" 
+			top: 100%
+			left: 0
+			+arr(12, 10, #F4D51F, tl)
+			margin: 2px 0 0 
+	small
+		+bc
+		font-size: 15px
+		line-height: 1
+		display: block
+
+.top
+	font-size: 0
+	padding: 0 0 26px 
+	.btn
+		display: inline-block
+		vertical-align: middle
+		margin: 0 16px 16px 0
+		+r3
+			margin: 0 0 16px 
+.table-wrap
+	overflow: auto	
+	width: 100%
+.table	
+	border: 1px solid #CAC9C9
+	+border-radius(5px 5px 0 0)
+	overflow: hidden
+	width: 591px
+	+box
+	background: #fff 
+	table 
+		th, td
+			padding: 10px  
+			border-right: 1px solid rgba(202, 201, 201, 0.21) 
+			vertical-align: middle
+			line-height: 1
+			text-align: left
+			&.is-name
+				width: 114px
+				padding: 0 10px 0 25px 
+				span
+					max-width: 70px
+			&.is-service
+				width: 86px
+			&.is-option
+				width: 137px
+			&.is-amount
+				width: 65px
+			&.is-status
+				width: 73px
+				border-right: none
+		td
+			border-top: 1px solid rgba(202, 201, 201, 0.21) 
+			overflow: hidden
+			white-space: nowrap
+			-ms-text-overflow: ellipsis
+			text-overflow: ellipsis		
+			font-family: Arial, sans-serif
+			font-size: 12px
+			color: #292929
+			padding-bottom: 8px  	
+		th
+			+g(#fff, #f1f1f1)
+			font-size: 12px
+			+bosc
+			font-weight: normal
+			border-bottom: 1px solid rgba(202, 201, 201, 1) 
+			padding: 15px 10px 
+			span
+				display: inline-block
+				position: relative
+				padding: 0 20px 0 0
+				text-align: center
+				&:before
+					position: absolute
+					top: 50%
+					right: 0
+					margin-top: -2px
+					+arr(10, 4, #616161, b)
+					content: "" 
+
+.form
+	max-width: 488px
+	padding: 9px 0 0
+	+r2
+		max-width: 300px 
+	&__row
+		margin: 0 -18px
+		+clr
+	&__col
+		padding: 0 18px
+		width: 50%
+		+box
+		float: left 
+		margin-bottom: 20px
+		position: relative
+		+r2
+			width: 100%
+			float: none
+	&__label
+		position: relative
+		display: block
+	&__btn
+		padding: 8px 21px
+		text-align: right 
+		width: 50%
+		+box
+		+r2
+			width: 100%
+			text-align: center
+.phone
+	label
+		padding: 0 0 0 86px
+	&__text
+		position: absolute
+		top: 0
+		left: 0
+		width: 30px
+		font-size: 15px
+		line-height: 33px
+		+opacity(0.5)
+	.input
+		&.is-small
+			position: absolute
+			top: 0
+			left: 30px
+			max-width: 53px
+			padding: 7px 13px 
+.days
+	&__text
+		position: absolute
+		top: 0
+		right: 0
+		width: 50px
+		font-size: 15px
+		line-height: 31px
+		padding: 0 0 2px
+		+opacity(0.5)
+	.input
+		padding-right: 58px 
+.date
+	&__icon
+		+opacity(0.5)
+		width: 30px
+		height: 33px
+		position: absolute
+		top: 0
+		right: 0
+		&:before
+			content: "" 
+			position: absolute			
+			+svg(calendar, 15, 19)
+			position: absolute
+			top: 7px
+			left: 0
+	.input
+		padding-right: 38px 
+.amount
+	&__text
+		position: absolute
+		top: 0
+		right: 0
+		width: 47px
+		font-size: 15px
+		line-height: 31px
+		padding: 0 0 2px
+		+opacity(0.5)
+	.input
+		padding-right: 58px 
+		
+.wrap
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	overflow: auto
+	z-index: 500 
+	display: none
+	&.is-active
+		display: block
+.overlay
+	+vertical
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	min-width: 320px
+	padding: 10px
+	+box
+	background: rgba(255, 255, 255, 0.81) 
+.popup
+	display: inline-block
+	vertical-align: middle
+	width: 100%
+	max-width: 404px
+	+box
+	padding: 26px 20px 30px 
+	position: relative
+	border: 5px solid #fddc22
+	background: #fff
+	i
+		&.is-success
+			+s(success)
+			display: block
+			margin: 0 auto 14px
+	h4
+		margin-bottom: 14px
+	small
+		+bc
+		font-size: 12px
+		line-height: 1
+		display: block
+		margin-bottom: 20px
+	p
+		+bc
+		font-size: 15px
+		line-height: 1
+		margin-bottom: 6px
+	span
+		font-family: Arial, sans-serif
+		font-size: 15px
+		line-height: 1
+		display: block
+	&__text
+		padding: 0 0 12px 
+	&__btn
+		padding: 10px 0 0 
+	&__close
+		+svg(close, 10, 10)
+		position: absolute
+		top: 15px
+		right: 17px
+		cursor: pointer
