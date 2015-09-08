@@ -41,8 +41,8 @@ html, body
 .bg_4
 	background-image: url("../img/bg_4.jpg")
 
-.bg_5
-	background-image: url("../img/bg_5.jpg")
+.bg_6
+	background-image: url("../img/bg_6.jpg")
 
 .inner
 	width: 100%
@@ -558,6 +558,10 @@ html, body
 		margin-bottom: 18px
 	.heading
 		margin-right: 20px
+
+.all-services.autoplay-wrap
+	.topper
+		margin-bottom: 0
 
 @media only screen and (max-width: 480px)
 	.all-services .heading
@@ -1981,3 +1985,372 @@ html, body
 
 .hidden
 	display: none
+	
+
+
+.autopay-register
+	width: percentage(316/880)
+	.step__inner
+		padding: 26px 16px
+		&:before
+			display: none
+.autopay__step2
+	display: block
+	padding-bottom: 20px
+	color: #FFF 
+	font-size: 12px
+	+bold
+.autopay__btn
+	text-align: center
+	+clr
+	a.btn
+		display: block
+		float: right
+		width: percentage(178/316)
+	input.btn
+		width: percentage(248/316)
+.autopay
+	.step_2
+		margin-top: 53px
+	
+.header
+	.menu	
+		float: left
+		width: percentage(720/880) 
+		margin-left: 40px
+		padding-top: 30px
+.menu
+	+ttu
+	+clr
+	nav
+		a
+			margin-right: 30px
+			font-size: 12px
+			color: #FFF
+			+bold 
+	.menu__main
+		float: left
+		a
+			display: block
+			float: left
+			&.is-active
+				opacity: 0.5
+	.menu__info
+		float: right
+		a
+			display: block
+			float: left
+			margin: 0 0 0 15px
+	.menu__phone
+		color: #FCFF00 
+		
+.autopay
+	.autopay__title
+		padding: 10px 0
+		+clr
+		.autopay__left
+			float: left
+		.autopay__right
+			float: right
+			width: percentage(227/880)
+			.btn
+				width: 100% 
+				height: 32px
+				font-size: 12px
+				padding: 9px 0 8px
+.autopay-table
+	table
+		width: 100%
+		thead
+			tr
+				height: 64px
+				border-top: 1px solid #65BBBF 
+				th
+					vertical-align: middle
+					padding: 0 25px
+					background: #229DA4
+					border-left: 1px solid #49B2B5 
+					font-size: 14px
+					font-weight: 400
+					color: #FFF
+					+reg
+					+clr
+					&:first-child
+						border: none
+					p
+						float: left
+					span
+						float: right
+						margin-top: 7px
+						+arr(10, 5, #FFF, b)
+		tbody
+			tr
+				height: 64px
+				border-top: 1px solid #E7F0EE 
+				td
+					vertical-align: middle
+					padding: 0 25px
+					border-left: 1px solid #edfbf8 
+					color: #474747
+					font-size: 14px
+					font-weight: 400
+					+reg
+					&:first-child
+						border: none
+					strong
+						font-weight: bold
+					&.autopay__set
+						position: relative
+						cursor: pointer
+						padding: 0
+						&:hover
+							background: #AAC3D0 
+						&.is-active
+							background: #AAC3D0
+							.autopay__post
+								display: block
+								left: -100%
+								+transition(transform, 0.5s, ease-out)
+							.autopay__edit
+								display: block
+								left: -100%
+								+transition(transform, 0.5s, ease-out)
+							.autopay__trash
+								display: block
+								left: -200%
+								+transition(transform, 0.5s, ease-out)
+					> div
+						display: block
+						width: 100%
+						height: 100%  
+						text-align: center
+						span
+							display: inline-block
+							vertical-align: middle
+						&.autopay__check
+							span
+								+s(check)
+						&.autopay__error
+							span
+								+s(error)
+						&.autopay__action
+							span
+								+s(action)
+						&.autopay__settings
+							span
+								+s(settings)
+						&.autopay__post, &.autopay__edit, &.autopay__trash
+							display: none
+							position: absolute
+							top: 0
+							right: 0
+							bottom: 0
+							left: 0
+							+vertical
+							+transition(transform, 0.5s, ease-out)
+							span
+								display: inline-block
+								vertical-align: middle
+						&.autopay__post
+							background: #51B4E9
+							span
+								+s(post)
+						&.autopay__edit
+							background: #51b4e9
+							span
+								+s(edit)
+						&.autopay__trash
+							background: #ff4f62
+							span
+								+s(trash)
+
+				&:nth-child(n)
+					td
+						background: rgba(255, 255, 255, 0.9) 
+				&:nth-child(n+1)
+					td
+						background: rgba(255, 255, 255, 0.85) 
+				&.is-active
+					background: #FFF 
+					
+.post-popup
+	.popup__text
+		text-transform: none
+	label
+		display: block
+		margin: 30px auto
+		input.post-field
+			width: 286px
+			height: 44px
+			padding: 10px 20px
+			border: 1px solid #CAE6E7 
+			+placeholder
+				font-style: italic
+	
+
+.autopay_cards
+	width: 37%
+	padding-bottom: 30px
+	h1
+		margin-bottom: 40px
+	.autopay__btn
+		padding-top: 40px
+	a.btn
+		width: 75%
+		height: 32px
+		padding: 9px 9px 8px
+		font-size: 12px
+a.btn
+	span.add
+		display: inline-block
+		vertical-align: top
+		margin: 1px 0 0 10px
+		+s(add)
+.autopay__cards
+	margin-bottom: 20px
+	font-size: 0
+.autopay__card
+	position: relative
+	display: inline-block
+	vertical-align: top
+	width: 310px
+	height: 40px
+	padding: 3px 15px 3px 25px
+	border: 1px solid #A0ABB0 
+	-webkit-border-radius: 5px 5px 0 0 
+	border-radius: 5px 5px 0 0 
+	cursor: pointer
+	+clr
+	&:before, &:after
+		content: ""
+		position: absolute
+		bottom: -1px
+		width: 10px
+		height: 1px
+		background: #A0ABB0 
+	&:before
+		left: -10px
+	&:after
+		right: -10px
+	input
+		float: left
+		width: 40px
+		margin-right: 10px
+		background: transparent
+		color: #FFF 
+		font-size: 24px
+		font-weight: 400
+		+reg 
+		&[type="text"]
+			padding: 7px 0
+			font-size: 14px
+	span
+		float: right
+		margin: 7px 0
+	&.visa
+		background: #37BDBE
+		span
+			margin-top: 11px
+			+s(visa)
+	&.mastercard
+		background: #2EA6D3
+		span
+			+s(mastercard) 
+.autopay__delete
+	display: inline-block
+	vertical-align: middle
+	margin: 13px 0 13px 20px
+	cursor: pointer
+	span
+		display: inline-block
+		vertical-align: middle
+		+s(del)
+
+.topper__back
+	display: inline-block
+	vertical-align: top
+	margin: 10px 20px 10px 0
+	cursor: pointer
+	span
+		display: inline-block
+		vertical-align: middle
+		+s(arrow-back)
+.topper__title
+	display: inline-block
+	vertical-align: top
+	text-transform: uppercase
+	color: #FFF
+	font-weight: 700 
+	+reg
+	h1
+		margin-bottom: 0
+		font-size: 21px
+	h3
+		font-size: 15px
+		color: #FFF 
+		
+			
+.autopay
+	.autopay__inner
+		float: left
+		width: percentage(315/877) 
+		margin: 0 10px 0 5px
+	.pay-service
+		width: 100%
+		margin-bottom: 20px 
+		padding: 15px 15px 30px  
+	.autopay__btns
+		+justify
+		.btn-blue
+			padding: 20px 30px 18px
+		.btn-orange
+			padding: 20px 40px 18px
+	.autopay__logo
+		float: left
+	.main__title
+		color: #000 
+	.select
+		position: relative
+		cursor: pointer
+		select
+			opacity: 0
+			height: 0
+			margin-top: -14px
+	.select__text
+		position: relative
+		display: block
+		padding: 0 10px 0 20px 
+		height: 43px
+		line-height: 43px
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		opacity: 1
+		font-size: 14px
+		font-style: normal
+		&:after
+			content: ""
+			position: absolute
+			right: 0px
+			top: 0
+			bottom: 0
+			+s(select-btn)
+	.select__list
+		position: absolute
+		display: none
+		left: 0
+		right: 0
+		top: 100%
+		z-index: 100
+		max-height: 200px
+		overflow-x: hidden
+		overflow-y: auto
+		background: #fff
+		li
+			padding: 5px 11px 
+			cursor: pointer
+			font-size: 14px
+			line-height: 1
+			&:hover
+				background: #3ab6bd
+				color: #fff 

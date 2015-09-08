@@ -1,0 +1,173 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Денежный перевод по России и за границу</title>
+	<meta name="viewport" content="initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta property="og:title" content="Денежный перевод по России и за границу">
+	<meta property="og:site_name" content="Счёт.ру">
+	<meta property="og:description" content="Оплата услуг картой без регистрации, переводы на карту, счет в банке или за границу.">
+	<meta property="og:image" content="http://schet.nebo15.me//img/logo_black.png">
+	<link rel="icon" href="schet/img/logo_black_48x48.png" sizes="48x48" type="image/png">
+
+	<link href="schet/css/suggestions-15.2.css" rel="stylesheet">
+<link href="schet/css/screen.css" rel="stylesheet">
+
+
+	
+	<!--[if lt IE 9]>
+	<script src="/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+
+	<!-- BEGIN  out-->
+<div class="out out_main bg_0">
+	<!-- begin inner  -->
+	<div class="inner">
+		<!-- begin header  -->
+		<header class="header" style="border: none;">
+			<a href="index.html" class="logo">
+				<img src="schet/img/logo.png" alt="">
+			</a>
+			<button class="nav_btn"><span></span></button>
+			<div class="menu">
+				<nav class="menu__main">
+					<a href="autopay-payments.html" class="">
+						<span>АВТОПЛАТЕЖи</span>
+					</a>
+					<a href="autopay-history.html" class="">
+						<span>ИСТОРИЯ ОПЕРАЦИЙ</span>
+					</a>
+					<a href="autopay-cards.html" class="is-active">
+						<span>ПЛАТЕЖНЫЕ КАРТЫ</span>
+					</a>
+				</nav>
+				<nav class="menu__info">
+					<a href="#" class="menu__phone">
+						<span>+7 903 7894590</span>
+					</a>
+					<a href="autopay-main.html">
+						<span>ВЫйти</span>
+					</a>
+				</nav>
+			</div>				
+		</header>
+		<!-- end header -->
+
+		<!-- begin container  -->
+		<section class="container">
+			
+<div class="all-services autopay-wrap">
+	<div class="autopay autopay_cards">
+		<h1>ВАШИ КАРТЫ</h1>
+		<div class="autopay__cards">
+			<div class="autopay__card visa">
+				<input type="password" value="5623">
+				<input type="password" value="7315">
+				<input type="password" value="3467">
+				<input type="text" value="6798">
+				<span></span>
+			</div>
+			<div class="autopay__delete"><span></span></div>
+		</div>
+		<div class="autopay__cards">
+			<div class="autopay__card mastercard">
+				<input type="password" value="4685">
+				<input type="password" value="4674">
+				<input type="password" value="0456">
+				<input type="text" value="3098">
+				<span></span>
+			</div>
+			<div class="autopay__delete"><span></span></div>
+		</div>
+		<div class="autopay__btn">
+		    <a href="#" class="btn btn-yellow">Добавить еще карту <span class="add"></span></a>
+		</div>
+	</div>	
+</div>
+
+<!-- wait popup -->
+<div class="popup-container wait_popup">
+	<div class="overlay"></div>
+	<div class="popup-wrapper js-popup">
+		<div class="popup">
+			<h2 class="popup__text">Подождите, перевод создается</h2>
+			<svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+				<circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+			</svg>
+		</div>
+	</div>
+</div>
+<!-- end wait popup -->
+		</section>
+		<!-- end container -->
+	</div>
+	<!-- end inner -->
+</div>
+<!-- END out-->
+
+	<!-- begin footer  -->
+	<footer class="footer">
+		<div class="inner">
+			<a href="transfer.html#" class="footer__logo">
+				<img src="schet/img/footer-logo.png" alt="">
+			</a>
+			<span class="copyright">©2014 Все права защищены</span>
+			<a href="legal.html" class="footer__link">Правовая информация</a>
+			<a href="http://schet.copiny.com/topics/new" class="footer__link">
+				Сообщить о проблеме
+			</a>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<!-- begin popup js-popup  -->
+	<div class="popup-container" id="ipsp_popup">
+		<div class="overlay"></div>
+		<div class="popup-wrapper js-popup">
+			<div class="popup">
+				<span class="popup__text">Вы перенаправляем вас на страницу оплаты</span>
+				<img src="schet/img/icons/ipsp-logo.png"/>
+			</div>
+		</div>
+	</div>
+	<!-- end popup js-popup -->
+
+	<!-- error popup -->
+	<div class="popup-container error_popup">
+		<div class="overlay"></div>
+		<div class="popup-wrapper js-popup">
+			<div class="popup">
+				<h2 class="popup__text">Произошла ошибка</h2>
+				<span class="popup__text countdown-part"></span>
+				<div class="popup__seconds countdown-part">
+					<span id="countdown" class="popup__numbers"></span>
+					<span class="popup__sec"></span>
+					<span class="popup__sec">Попробуйте обновить страницу, зайти позже или обратиться в <a href="http://schet.copiny.com/topics/new">службу поддержки</a>.</span>
+				</div>
+				<a href="transfer.html#" onclick="$('.error_popup').hide(); return false;" class="btn btn-blue">Закрыть</a>
+			</div>
+		</div>
+	</div>
+	<!-- end error popup -->
+
+	<script src="js/lib/head.js"></script>
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/jquery.inputmask.bundle.js"></script>
+<script src="js/lib/jquery-ui-custom.min.js"></script>
+<script src="js/lib/jquery.validate.js"></script>
+<script src="js/lib/jquery.textchange.js"></script>
+<script src="js/lib/jquery.xdomainrequest.min.js"></script>
+<script src="js/lib/jquery.suggestions-15.2.min.js"></script>
+<script src="js/common.js"></script>
+
+	
+	<script>
+
+	</script>
+</body>
+</html>

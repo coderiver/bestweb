@@ -1,0 +1,1275 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"slide",
+				"slideToggle	.slideToggle()"
+			],
+			[
+				"toggle",
+				"toggleClass	.toggleClass()"
+			],
+			[
+				"aut",
+				"autoplaySpeed"
+			],
+			[
+				"scroll",
+				"scrollController"
+			],
+			[
+				"oute",
+				"outerHeight	.outerHeight()"
+			],
+			[
+				"cap",
+				"caption"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"remo",
+				"removeClass	.removeClass()"
+			],
+			[
+				"ini",
+				"initRes"
+			],
+			[
+				"parts",
+				"parts__item"
+			],
+			[
+				"cp",
+				"cur:p	cursor:pointer"
+			],
+			[
+				"dib",
+				"d:ib	display:inline-block"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"cur",
+				"cur:p	cursor:pointer"
+			],
+			[
+				"__I",
+				"__info"
+			],
+			[
+				"wa",
+				"w:a	width:auto"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"bgi",
+				"bgi:n	background-image:none"
+			],
+			[
+				"u",
+				"url"
+			],
+			[
+				"td",
+				"td:u	text-decoration:underline"
+			],
+			[
+				"borr",
+				"border-right"
+			],
+			[
+				"tal",
+				"ta:l	text-align:left"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"contact",
+				"contact-map"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"bo",
+				"border-bottom"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"br",
+				"webkit-border-radius"
+			],
+			[
+				"fs",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"a",
+				"admin"
+			],
+			[
+				"ele",
+				"else"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"of",
+				"ofbook"
+			],
+			[
+				"scro",
+				"scroll"
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"O",
+				"opacity"
+			],
+			[
+				"ad",
+				"addClass"
+			],
+			[
+				"whit",
+				"white"
+			],
+			[
+				"10px",
+				"10px"
+			],
+			[
+				"ofbo",
+				"ofbold"
+			],
+			[
+				"ac",
+				"accordion__title-in"
+			],
+			[
+				"co",
+				"content"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"lt",
+				"list-style-type"
+			],
+			[
+				"title",
+				"title"
+			],
+			[
+				"re",
+				"no-repeat"
+			],
+			[
+				"s",
+				"show"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"sldier",
+				"slider"
+			],
+			[
+				"va",
+				"var"
+			],
+			[
+				"ti",
+				"this"
+			],
+			[
+				"filter",
+				"filter__left"
+			],
+			[
+				"to",
+				"toggleClass"
+			],
+			[
+				"borde",
+				"border"
+			],
+			[
+				"form",
+				"form__title"
+			],
+			[
+				"for",
+				"form"
+			],
+			[
+				"conta",
+				"container_12"
+			],
+			[
+				"list-",
+				"list-style-type"
+			],
+			[
+				"tr",
+				"transition"
+			],
+			[
+				"form_",
+				"form__col"
+			],
+			[
+				"top",
+				"topic"
+			],
+			[
+				"CH",
+				"change"
+			],
+			[
+				"ch",
+				"change"
+			],
+			[
+				"is",
+				"is-active"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"is-",
+				"is-selected"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"no-",
+				"no-repeat"
+			],
+			[
+				"sli",
+				"slideTogle"
+			],
+			[
+				"fad",
+				"fadeIn"
+			],
+			[
+				"price__",
+				"price__old"
+			],
+			[
+				"on",
+				"onClose"
+			],
+			[
+				"sl",
+				"slideTogle"
+			],
+			[
+				"pa",
+				"parent"
+			],
+			[
+				"per",
+				"parent"
+			],
+			[
+				"fir",
+				"first-child"
+			],
+			[
+				"cl",
+				"clr"
+			],
+			[
+				"t",
+				"type	Attr"
+			],
+			[
+				"bt",
+				"btn"
+			],
+			[
+				"inpu",
+				"input"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"or",
+				"order"
+			],
+			[
+				"ff",
+				"ff:s	font-family:serif"
+			],
+			[
+				"n",
+				"nth-child"
+			],
+			[
+				"sele",
+				"select__list"
+			],
+			[
+				"slid",
+				"slideUp"
+			],
+			[
+				"side",
+				"slideToggle"
+			],
+			[
+				"e",
+				"ellipsis"
+			],
+			[
+				"kate",
+				"kate__info"
+			],
+			[
+				"v",
+				"visible"
+			],
+			[
+				"btn",
+				"btn__ico"
+			],
+			[
+				"te",
+				"textarea"
+			],
+			[
+				"pay",
+				"pay__row"
+			],
+			[
+				"so",
+				"solid"
+			],
+			[
+				"bl",
+				"black"
+			],
+			[
+				"fo",
+				"focus"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"rem",
+				"removeClass"
+			],
+			[
+				"se",
+				"select__text"
+			],
+			[
+				"gre",
+				"grey1"
+			],
+			[
+				"Sa",
+				"sans-serif"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"menu",
+				"menu__item"
+			],
+			[
+				"footer",
+				"footer__title1"
+			],
+			[
+				"sv",
+				"svg"
+			],
+			[
+				"la",
+				"linear"
+			],
+			[
+				"lI",
+				"list-style-type"
+			],
+			[
+				"tan",
+				"transition"
+			],
+			[
+				"he",
+				"header"
+			],
+			[
+				"text",
+				"textarea	Tag"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"pla",
+				"placeholder-color"
+			],
+			[
+				"first",
+				"first-child"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"bg-",
+				"bg-grey-light"
+			],
+			[
+				"gr",
+				"grey"
+			],
+			[
+				"pur",
+				"purple"
+			],
+			[
+				"hi",
+				"hide"
+			],
+			[
+				"pu",
+				"purple"
+			],
+			[
+				"js-",
+				"js-shirt-btn"
+			],
+			[
+				"row",
+				"row_counter"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/_WORK_m-kozelchuk/15.08.26/schet.ru/autopay.html",
+			"settings":
+			{
+				"buffer_size": 15281,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/_WORK_m-kozelchuk/15.08.26/schet.ru/autopay-history.html",
+			"settings":
+			{
+				"buffer_size": 7164,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/_WORK_m-kozelchuk/15.08.26/schet.ru/index.html",
+			"settings":
+			{
+				"buffer_size": 9098,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_common.sass",
+			"settings":
+			{
+				"buffer_size": 2676,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_main.sass",
+			"settings":
+			{
+				"buffer_size": 39758,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_mod.sass",
+			"settings":
+			{
+				"buffer_size": 5597,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/_WORK_m-kozelchuk/15.08.26/schet.ru/js/common.js",
+			"settings":
+			{
+				"buffer_size": 8948,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/js",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/schet",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/schet/sass"
+	],
+	"file_history":
+	[
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/services/827/payment.html",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/pay-service.html",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/transfer.html",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/schet/sass/_layouts.sass",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/schet/sass/_mod.sass",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/schet/sass/_main.sass",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/schet/sass/_common.sass",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/autopay.html",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/transfer.1.html",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/autopay-main.html",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/schet/sass/lib/_base.scss",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/schet/config.rb",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/autopay-step2.html",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/schet/sass/screen.sass",
+		"/D/_WORK_m-kozelchuk/15.08.26/design/SRC/ATT00001.htm",
+		"/D/_WORK_m-kozelchuk/15.08.26/schet.ru/index.html",
+		"/D/_WORK_m-kozelchuk/15.08.25/commerce/sass/_common.sass",
+		"/D/_WORK_m-kozelchuk/15.08.25/commerce/sass/_header.sass",
+		"/D/_WORK_m-kozelchuk/15.08.25/commerce/js/common.js",
+		"/D/_WORK_m-kozelchuk/15.08.25/commerce/sass/_main.sass",
+		"/D/_WORK_m-kozelchuk/15.08.25/commerce/sass/_footer.sass",
+		"/D/_WORK_m-kozelchuk/15.08.25/commerce/index.html",
+		"/D/_WORK_m-kozelchuk/15.08.13/rotari/index.html",
+		"/D/_WORK_m-kozelchuk/15.08.13/rotari/js/common.js",
+		"/D/_WORK_m-kozelchuk/15.08.13/rotari/index-2.html",
+		"/D/_WORK_m-kozelchuk/15.08.25/commerce/js/init.js",
+		"/D/_WORK_m-kozelchuk/15.07.16/sceptic/js/common.js",
+		"/D/_WORK_m-kozelchuk/15.08.25/commerce/sass/screen.sass",
+		"/D/_WORK_m-kozelchuk/15.08.21/mrt/sass/_main.sass",
+		"/D/_WORK_m-kozelchuk/15.08.21/mrt/sass/_layouts.sass",
+		"/D/_WORK_m-kozelchuk/15.08.21/mrt/sass/_inner.sass",
+		"/D/_WORK_m-kozelchuk/15.08.21/mrt/sass/_header.sass",
+		"/D/_WORK_m-kozelchuk/15.08.21/mrt/sass/_footer.sass",
+		"/D/_WORK_m-kozelchuk/15.08.21/mrt/sass/_common.sass",
+		"/D/_WORK_m-kozelchuk/15.08.21/mrt/sass/_article.sass",
+		"/D/_WORK_m-kozelchuk/15.08.21/mrt/text.html",
+		"/D/_WORK_m-kozelchuk/15.08.21/mrt/contacts.html",
+		"/D/_WORK_m-kozelchuk/15.08.21/mrt/lp.html",
+		"/D/_WORK_m-kozelchuk/15.08.21/mrt/index.html",
+		"/D/_WORK_m-kozelchuk/15.08.20/ukraineunited/index.html",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/sass/_home.sass",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/sass/_results.sass",
+		"/D/_WORK_m-kozelchuk/15.08.13/rotari/sass/_main.sass",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/js/lib/detail.js",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/sass/_detail.sass",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/checkout.html",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/hotel-detail-page.html",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/bpal-results-page.html",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/sass/screen.sass",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/sass/_checkout.sass",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/js/lib/checkout.js",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/sass/_main.sass",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/sass/_layouts.sass",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/sass/_home2.sass",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/sass/_header.sass",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/sass/_common.sass",
+		"/D/_WORK_m-kozelchuk/15.08.13/rotari/sass/_common.sass",
+		"/D/_WORK_m-kozelchuk/15.08.13/rotari/js/init.js",
+		"/D/_WORK_m-kozelchuk/15.08.13/rotari/sass/screen.sass",
+		"/D/_WORK_m-kozelchuk/15.08.13/rotari/sass/_jquery-ui.min.sass",
+		"/D/_WORK_m-kozelchuk/flkdf/propertyru-master/newbuilding.html",
+		"/D/_WORK_m-kozelchuk/15.07.16/sceptic/sass/_main.sass",
+		"/D/_WORK_m-kozelchuk/15.07.16/sceptic/news-day.html",
+		"/D/_WORK_m-kozelchuk/fl/bookingpal/sass/lib/_mixins.sass",
+		"/D/_WORK_m-kozelchuk/15.04.08/newera/locations.html",
+		"/D/_WORK_m-kozelchuk/15.04.08/newera/js/common.js",
+		"/D/_WORK_m-kozelchuk/15.04.08/newera/sass/_main.sass",
+		"/D/_WORK_m-kozelchuk/fl/hraboviyvadim-bookingpal/sass/lib/_mixins.sass",
+		"/D/_WORK_m-kozelchuk/fl/hraboviyvadim-bookingpal/sass/_results.sass",
+		"/D/_WORK_m-kozelchuk/fl/hraboviyvadim-bookingpal/js/lib/results.js",
+		"/D/_WORK_m-kozelchuk/fl/hraboviyvadim-bookingpal/bpal-results-page.html",
+		"/D/_WORK_m-kozelchuk/15.04.01/kronus/css/frontend.css",
+		"/D/_WORK_m-kozelchuk/fl/15.07.13/hraboviyvadim-bookingpal/bpal-results-page.html",
+		"/D/_WORK_m-kozelchuk/fl/15.07.13/hraboviyvadim-bookingpal/sass/_common.sass",
+		"/D/_WORK_m-kozelchuk/fl/15.07.13/hraboviyvadim-bookingpal/js/lib/results.js",
+		"/D/_WORK_m-kozelchuk/fl/15.07.13/hraboviyvadim-bookingpal/js/common.js",
+		"/D/_WORK_m-kozelchuk/fl/15.07.13/hraboviyvadim-bookingpal/sass/_main.sass",
+		"/D/_WORK_m-kozelchuk/fl/15.07.13/hraboviyvadim-bookingpal/explorer-home-page.html",
+		"/D/_WORK_m-kozelchuk/fl/15.07.13/hraboviyvadim-bookingpal/bpal-home-page.html",
+		"/D/_WORK_m-kozelchuk/fl/15.07.13/hraboviyvadim-bookingpal/sass/_results.sass",
+		"/D/_WORK_m-kozelchuk/fl/15.07.13/hraboviyvadim-bookingpal/js/init.js",
+		"/D/_WORK_m-kozelchuk/fl/15.07.13/hraboviyvadim-bookingpal/js/results.js",
+		"/D/_WORK_m-kozelchuk/fl/15.07.13/hraboviyvadim-bookingpal/js/lib/head.js",
+		"/D/_WORK_m-kozelchuk/fl/15.07.13/hraboviyvadim-bookingpal/sass/_home.sass",
+		"/D/_WORK_m-kozelchuk/fl/15.07.13/hraboviyvadim-bookingpal/sass/_home2.sass",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/sass/_common.sass",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/sass/_mockup.sass",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/js/common.js",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/sass/_main.sass",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/sass/_mod.sass",
+		"/D/_WORK_m-kozelchuk/15.04.01/kronus/index.html",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/index.html",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/hardware.html",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/OS.html",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/benefits.html",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/int-surf.html",
+		"/D/_WORK_m-kozelchuk/15.07.16/sceptic/404.html",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/table.html",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/js/init.js",
+		"/D/_WORK_m-kozelchuk/15.07.16/sceptic/js/init.js",
+		"/D/_WORK_m-kozelchuk/15.07.16/sceptic/index.html",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/sass/screen.sass",
+		"/D/_WORK_m-kozelchuk/15.07.16/sceptic/sass/_common.sass",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/media.html",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/ecosystem.html",
+		"/D/_WORK_m-kozelchuk/15.07.16/sceptic/all-news.html",
+		"/D/_WORK_m-kozelchuk/15.07.16/sceptic/one-opinion.html",
+		"/D/_WORK_m-kozelchuk/15.07.16/sceptic/opinions.html",
+		"/D/_WORK_m-kozelchuk/15.07.16/sceptic/longread.html",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/watch.html",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/software.html",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/SDK.html",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/restaurants.html",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/contacts.html",
+		"/D/_WORK_m-kozelchuk/15.06.09/admixer/js/common.js",
+		"/D/_WORK_m-kozelchuk/15.07.16/sceptic/sass/_layouts.sass",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/sass/_slick.sass",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/js/lib/mockup.js",
+		"/D/_WORK_m-kozelchuk/2015.07.13/design/MockupSlideshow/MockupSlideshow/index4.html",
+		"/D/_WORK_m-kozelchuk/2015.07.13/design/MockupSlideshow/MockupSlideshow/js/main.js",
+		"/D/_WORK_m-kozelchuk/Новая папка (2)/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css",
+		"/D/_WORK_m-kozelchuk/2015.07.13/design/MockupSlideshow/MockupSlideshow/script.js",
+		"/D/_WORK_m-kozelchuk/2015.07.13/design/MockupSlideshow/MockupSlideshow/css/mockup4.css",
+		"/D/_WORK_m-kozelchuk/2015.07.13/irt/sass/_layouts.sass",
+		"/D/_WORK_m-kozelchuk/15.06.09/admixer/sass/_grid.sass",
+		"/D/_WORK_m-kozelchuk/15.06.09/admixer/sass/_common.sass",
+		"/D/_WORK_m-kozelchuk/15.06.09/admixer/sass/_market.sass",
+		"/D/_WORK_m-kozelchuk/15.06.09/admixer/index.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 300.0,
+		"where_history":
+		[
+			"<open files>,C:\\Users\\Moroz\\Desktop\\partnerguesthouse-master,C:\\Users\\Moroz\\Desktop\\partnerguesthouse-master",
+			"<open files>,C:\\Users\\Moroz\\Desktop\\partnerguesthouse-master",
+			"<open files>",
+			"D:\\git\\partnerguesthouse-master",
+			"D:\\git\\partnerguesthouse-master,D:\\git\\partnerguesthouse-master,D:\\git\\partnerguesthouse-master",
+			"D:\\git\\partnerguesthouse-master,D:\\git\\partnerguesthouse-master",
+			"D:\\git\\partnerguesthouse-master",
+			"<open files>,<open folders>",
+			"<open files>",
+			"",
+			"<open files>,<open files>",
+			"<open files>",
+			"D:\\git\\partnerguesthouse-master\\assets\\js"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"popup",
+			"wait",
+			"popup",
+			"js-popup",
+			"block",
+			"height: 64px",
+			"history",
+			"menu",
+			"data-step",
+			"btn",
+			"all-",
+			"step_1",
+			"step_cont",
+			"step-1",
+			"step-conta",
+			"step",
+			"transfer",
+			"bill",
+			"approach__wrap",
+			"approach",
+			"Full mobilization and readiness was declared in Ukraine.",
+			"марта",
+			"березня",
+			"марта",
+			"березня",
+			"марта",
+			"березня",
+			"марта",
+			"березня",
+			"марта",
+			"березня",
+			"марта",
+			"березня",
+			"марта",
+			"березня",
+			"марта",
+			"березня",
+			"марта",
+			"березня",
+			"марта",
+			"березня",
+			"марта",
+			"березня",
+			"march",
+			"<div class=\"events__day\">7 of march</div>\n							<div class=\"events__text\"></div>",
+			"<div class=\"events__day\">7 of march</div>\n							<div class=\"events__text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt fermentum nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. </div>",
+			"<div class=\"events__day en\">7 of march</div>\n							<div class=\"events__text en\"></div>\n							<div class=\"events__day uk\">7 of march</div>\n							<div class=\"events__text uk\"></div>\n							<div class=\"events__day ru\">7 of march</div>\n							<div class=\"events__text ru\"></div>",
+			"<div class=\"events__day\">7 of march</div>\n							<div class=\"events__text\"></div>",
+			"<div class=\"events__day\">7 of march</div>\n							<div class=\"events__text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt fermentum nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. </div>",
+			"<div class=\"events__day\">7 of march</div>\n							<div class=\"events__text\"></div>",
+			"<div class=\"events__day\">7 of march</div>\n							<div class=\"events__text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt fermentum nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. </div>",
+			"slide-b",
+			"<p>РІ Президент Гаррі С. К. Хуанг називається 106-ї Міжнародної Конвенції Ротарі в замовлення на 6 червня в концертно-розважальний комплекс parque anhembi в Сан-Пауло, Бразилія.</p>\n							<i>Photo Credit: Rotary International/Monika Lozinska</i>",
+			"button",
+			"reservation",
+			"input",
+			"p",
+			"28",
+			"marker-map",
+			"marker-map-a",
+			"marker-info",
+			"location-",
+			"service-tab",
+			"service",
+			"<a href=\"#\" class=\"btn\">book now</a>",
+			"flt__item js-flt",
+			"flt__title",
+			"flt__content",
+			"flt__item",
+			"</a>",
+			"<a href=\"#\" class=\"flt__title\">",
+			"filters",
+			"list",
+			"inn",
+			"label",
+			"company",
+			"btn",
+			"add",
+			"manage",
+			"mange",
+			"table",
+			"this",
+			"o-top",
+			" class=\"js-sensor-caption\"",
+			"a",
+			"sensor",
+			"span",
+			"scrollTop",
+			"t-nav",
+			"js-t-nav",
+			"Header",
+			"right",
+			"top",
+			".l",
+			"l-top",
+			"anage",
+			"cms",
+			"key",
+			"more",
+			"manage",
+			"__preview",
+			"btn",
+			"body",
+			"red",
+			"img/",
+			"economics",
+			"ol",
+			"l-wrapper",
+			"l__inner",
+			"item",
+			"social",
+			"jpg",
+			"ppl",
+			".date",
+			"item",
+			"project",
+			"a",
+			"news",
+			"БЖ",
+			"search",
+			"fixed",
+			"js-fixed",
+			"fixed",
+			"header",
+			"__img",
+			"search",
+			"soci",
+			"ui-slider"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"img",
+			"",
+			"-",
+			"gallery",
+			"<div class=\"topbar\">\n            <div class=\"container\">\n                <!-- Topbar Navigation -->\n                <ul class=\"loginbar pull-right\">\n                    <li>\n                        <i class=\"fa fa-globe\"></i>\n                        <a>Languages</a>\n                        <ul class=\"lenguages\">\n                            <li class=\"active\">\n                                <a href=\"#\">English <i class=\"fa fa-check\"></i></a> \n                            </li>\n                            <li><a href=\"#\">Spanish</a></li>\n                            <li><a href=\"#\">Russian</a></li>\n                            <li><a href=\"#\">German</a></li>\n                        </ul>\n                    </li>\n                    <li class=\"topbar-devider\"></li>   \n                    <li><a href=\"page_faq.html\">Help</a></li>  \n                    <li class=\"topbar-devider\"></li>   \n                    <li>\n                        <div class=\"btn-group btn-group_top\">\n                           <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\">id <i class=\"fa fa-angle-down\"></i>\n                           </button>\n                           <ul class=\"dropdown-menu\" role=\"menu\">\n                               <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                               <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                               <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                               <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                               <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                               <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                               <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                               <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                               <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                               <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                               <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                               <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                               <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                           </ul>\n                       </div>\n\n                    </li>   \n                </ul> \n                <!-- End Topbar Navigation -->\n                <div class=\"header__facebook\"><span>Присоединяйтесь к нам на Facebook</span></div>\n            </div>\n        </div>",
+			"<div class=\"footer\">\n        <div class=\"container\">\n                <!-- BEGIN row -->\n                <div class=\"row\">\n                    <div class=\"col-md-2 col-sm-12\">\n                        <a href=\"#\" class=\"footer__logo\"></a>\n                        <div class=\"footer__apart\">Апартаменты в<br> Киеве посуточно</div>\n                    </div>\n                    <div class=\"col-md-10 col-sm-12\">\n                        <!-- Collect the nav links, forms, and other content for toggling -->\n                        <div class=\"collapse navbar-collapse navbar-responsive-collapse margin-bottom-20\">\n                            <ul class=\"nav navbar-nav\">\n                                <!-- Home -->\n                                <li class=\"nav__item\"><a href=\"#\">ГЛАВНАЯ</a></li>\n                                <!-- End Home -->\n\n                                <!-- Features -->\n                                <li class=\"nav__item\"><a href=\"#\">О НАС</a></li>\n                                <!-- End Features -->\n\n                                <!-- Pages -->                        \n                                <li class=\"nav__item\"><a href=\"#\">КВАРТИРЫ</a></li>\n                                <!-- End Pages -->\n\n                                <!-- Features -->\n                                <li class=\"nav__item\"><a href=\"#\">ГЕСТХАУСЫ</a></li>\n                                <!-- End Features -->\n\n                                <!-- Portfolio -->\n                                <li class=\"nav__item\"><a href=\"#\">ТРАНСФЕР</a></li>\n                                <!-- Ens Portfolio -->\n\n                                <!-- Contacts -->\n                                <li class=\"nav__item\"><a href=\"#\">АКЦИИ</a></li>                    \n                                <!-- End Contacts -->\n\n                                <!-- Portfolio -->\n                                <li class=\"nav__item\"><a href=\"#\">ДОЛГОСРОЧНО</a></li>\n                                <!-- Ens Portfolio -->\n                                \n                                <!-- Blog -->\n                                <li class=\"nav__item\"><a href=\"#\">КОНТАКТЫ </a></li>\n                                <!-- End Blog -->\n\n                                <!-- Portfolio -->\n                                <li class=\"nav__item\"><a href=\"#\">НОВОСТИ</a></li>\n                                <!-- Ens Portfolio -->\n                                \n                                <!-- Portfolio -->\n                                <li class=\"nav__item\"><a href=\"#\">ПОМОЩЬ</a></li>\n                                <!-- Ens Portfolio -->\n                                \n                            </ul>\n                        </div><!--/navbar-collapse-->\n                        <div class=\"col-md-4 col-sm-12\">\n                            <h5 class=\"color-black margin-bottom-10\">Бронирование</h5>\n                            <ul class=\"list-unstyled who\">\n                                <li><a href=\"#\"><i class=\"fa fa-phone\"></i>+38 044 228 55 11</a></li>\n                                <li><a href=\"#\"><i class=\"fa fa-skype\"></i>reservation.partnerguesthouse</a></li>\n                                <li><a href=\"#\"><i class=\"fa fa-calendar\"></i>Пн-Вс: 9:00 - 21:00</a></li>\n                            </ul>\n                        </div>\n                        <div class=\"col-md-4 col-sm-12\">\n                            <h5 class=\"color-black margin-bottom-10\">Служба поселения</h5>\n                            <ul class=\"list-unstyled who\">\n                                <li><a href=\"#\"><i class=\"fa fa-phone\"></i>+38 044 228 55 11</a></li>\n                                <li><a href=\"#\"><i class=\"fa fa-skype\"></i>reservation.partnerguesthouse</a></li>\n                                <li><a href=\"#\"><i class=\"fa fa-calendar\"></i>Пн-Вс: 9:00 - 21:00</a></li>\n                            </ul>\n                        </div>\n                        <div class=\"col-md-4 col-sm-12\">\n                            <h5 class=\"color-black margin-bottom-10\">Дополнительно</h5>\n                            <ul class=\"list-unstyled list-unstyled_right who\">\n                                <li><a href=\"#\">Политика конфиденциальности</a></li>\n                                <li><a href=\"#\">Условия использования сервиса</a></li>\n                                <li><a href=\"#\">Изменение условий бронирвоания</a></li>\n                                <li><a href=\"#\">Безопасность кредитных карт</a></li>\n                            </ul>\n                        </div>\n                        \n                        <div class=\"btn-group btn-group_mod\">\n                            <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\">id <i class=\"fa fa-angle-down\"></i>\n                            </button>\n                            <ul class=\"dropdown-menu\" role=\"menu\">\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                            </ul>\n                        </div>\n\n                    </div>\n                </div>\n                <!-- END row -->\n                \n        </div> \n    </div>",
+			"<div class=\"footer\">\n        <div class=\"container\">\n                <!-- BEGIN row -->\n                <div class=\"row\">\n                    <div class=\"col-md-2 col-sm-12\">\n                        <a href=\"#\" class=\"footer__logo\"></a>\n                        <div class=\"footer__apart\">Апартаменты в<br> Киеве посуточно</div>\n                    </div>\n                    <div class=\"col-md-10 col-sm-12\">\n                        <!-- Collect the nav links, forms, and other content for toggling -->\n                        <div class=\"collapse navbar-collapse navbar-responsive-collapse margin-bottom-20\">\n                            <ul class=\"nav navbar-nav\">\n                                <!-- Home -->\n                                <li class=\"nav__item\"><a href=\"#\">ГЛАВНАЯ</a></li>\n                                <!-- End Home -->\n\n                                <!-- Features -->\n                                <li class=\"nav__item\"><a href=\"#\">О НАС</a></li>\n                                <!-- End Features -->\n\n                                <!-- Pages -->                        \n                                <li class=\"nav__item\"><a href=\"#\">КВАРТИРЫ</a></li>\n                                <!-- End Pages -->\n\n                                <!-- Features -->\n                                <li class=\"nav__item\"><a href=\"#\">ГЕСТХАУСЫ</a></li>\n                                <!-- End Features -->\n\n                                <!-- Portfolio -->\n                                <li class=\"nav__item\"><a href=\"#\">ТРАНСФЕР</a></li>\n                                <!-- Ens Portfolio -->\n\n                                <!-- Contacts -->\n                                <li class=\"nav__item\"><a href=\"#\">АКЦИИ</a></li>                    \n                                <!-- End Contacts -->\n\n                                <!-- Portfolio -->\n                                <li class=\"nav__item\"><a href=\"#\">ДОЛГОСРОЧНО</a></li>\n                                <!-- Ens Portfolio -->\n                                \n                                <!-- Blog -->\n                                <li class=\"nav__item\"><a href=\"#\">КОНТАКТЫ </a></li>\n                                <!-- End Blog -->\n\n                                <!-- Portfolio -->\n                                <li class=\"nav__item\"><a href=\"#\">НОВОСТИ</a></li>\n                                <!-- Ens Portfolio -->\n                                \n                                <!-- Portfolio -->\n                                <li class=\"nav__item\"><a href=\"#\">ПОМОЩЬ</a></li>\n                                <!-- Ens Portfolio -->\n                                \n                            </ul>\n                        </div><!--/navbar-collapse-->\n                        <div class=\"col-md-4 col-sm-12\">\n                            <h5 class=\"color-black margin-bottom-10\">Our Office Details</h5>\n                            <ul class=\"list-unstyled who\">\n                                <li><a href=\"#\"><i class=\"fa fa-phone\"></i>+38 044 228 55 11</a></li>\n                                <li><a href=\"#\"><i class=\"fa fa-skype\"></i>reservation.partnerguesthouse</a></li>\n                                <li><a href=\"#\"><i class=\"fa fa-calendar\"></i>Пн-Вс: 9:00 - 21:00</a></li>\n                            </ul>\n                        </div>\n                        <div class=\"col-md-4 col-sm-12\">\n                            <h5 class=\"color-black margin-bottom-10\">Our Office Details</h5>\n                            <ul class=\"list-unstyled who\">\n                                <li><a href=\"#\"><i class=\"fa fa-phone\"></i>+38 044 228 55 11</a></li>\n                                <li><a href=\"#\"><i class=\"fa fa-skype\"></i>reservation.partnerguesthouse</a></li>\n                                <li><a href=\"#\"><i class=\"fa fa-calendar\"></i>Пн-Вс: 9:00 - 21:00</a></li>\n                            </ul>\n                        </div>\n                        <div class=\"col-md-4 col-sm-12\">\n                            <h5 class=\"color-black margin-bottom-10\">Our Office Details</h5>\n                            <ul class=\"list-unstyled list-unstyled_right who\">\n                                <li><a href=\"#\">Политика конфиденциальности</a></li>\n                                <li><a href=\"#\">Условия использования сервиса</a></li>\n                                <li><a href=\"#\">Изменение условий бронирвоания</a></li>\n                                <li><a href=\"#\">Безопасность кредитных карт</a></li>\n                            </ul>\n                        </div>\n                        \n                        <div class=\"btn-group btn-group_mod\">\n                            <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\">id <i class=\"fa fa-angle-down\"></i>\n                            </button>\n                            <ul class=\"dropdown-menu\" role=\"menu\">\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                                <li><a href=\"#\"><strong>1s2x - </strong> бронирвоания</a></li>\n                            </ul>\n                        </div>\n\n                    </div>\n                </div>\n                <!-- END row -->\n                \n        </div> \n    </div>",
+			"<i class=\"list__ico glyphicon glyphicon-tint\"></i>",
+			"<i class=\"list__ico fa fa-desktop\"></i>",
+			"<i class=\"list__ico glyphicon glyphicon-fire\"></i>",
+			"<i class=\"list__ico glyphicon glyphicon-tint\"></i>",
+			"<i class=\"list__ico icon-shuffle\"></i>",
+			"<i class=\"list__ico fa fa-cutlery\"></i>",
+			"<i class=\"list__ico fa fa-desktop\"></i>",
+			"<i class=\"fa fa-desktop\"></i>",
+			"<span class=\"ruble\"></span>",
+			"url('/images/themes/default/icons-sce1d12077a.png')",
+			"url('/images/themes/default/icons-s6f88b99cc7.png')",
+			"url(\"/images/themes/default/",
+			"url('/images/themes/default/",
+			"url(\"/images/themes/default/",
+			"/images/themes/default/",
+			"../images/",
+			"../images/bg.png"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/_WORK_m-kozelchuk/15.08.26/schet.ru/autopay.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1794,
+								1794
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 858.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/_WORK_m-kozelchuk/15.08.26/schet.ru/autopay-history.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4996,
+								4996
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1800.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/_WORK_m-kozelchuk/15.08.26/schet.ru/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9098,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2028,
+								2028
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 523.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "_common.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2676,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								701,
+								701
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1076.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_main.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 39758,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27754,
+								27754
+							]
+						],
+						"settings":
+						{
+							"auto_indent": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 21536.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_mod.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5597,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1838,
+								1838
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4320.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/_WORK_m-kozelchuk/15.08.26/schet.ru/js/common.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8948,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4152,
+								4157
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1953.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "schet.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\_WORK_m-kozelchuk\\15.08.25\\commerce\\sass\\commerce.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 168.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
